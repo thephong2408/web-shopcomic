@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 214, 219, 20;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -15,17 +15,188 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 100%;
 
+  object-fit: cover;
+}
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #fff;
+  background-color: #141414;
+  font-size: 62.5%;
+  font-size: 16px;
+}
+html {
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.bg-header {
+  background-color: rgb(0, 0, 0, 0.9);
+}
+.bg__title {
+  background: linear-gradient(to top, #ed4d2d, #f68601);
+}
+.truncate-lines-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.truncate-lines-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* bg */
+.bg__button {
+  background: linear-gradient(to left, #ed4d2d, #f68601);
+}
+.bg__alert {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg_img {
+  background: radial-gradient(
+        circle at center,
+        rgb(0, 0, 0, 1) 0%,
+        transparent 50%
+      )
+      no-repeat,
+    linear-gradient(to bottom left, rgb(0, 0, 0, 1) 0%, transparent 50%)
+      no-repeat,
+    linear-gradient(to bottom right, rgb(0, 0, 0, 1) 0%, transparent 50%)
+      no-repeat,
+    linear-gradient(to top, rgb(0, 0, 0, 1) 5%, transparent 50%) no-repeat;
+}
+.bg_img2 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 1) 20%, transparent 50%)
+      no-repeat,
+    linear-gradient(to bottom, rgba(0, 0, 0, 1) 5%, transparent 50%) no-repeat,
+    linear-gradient(to right, rgba(0, 0, 0, 1) 40%, transparent 50%) no-repeat;
 }
 
+.bg_img1 {
+  background-color: rgb(0, 0, 0, 0.9);
+}
+
+/* Xóa cài đặt mặc định của thẻ li */
+li {
+  list-style: none; /* Bỏ dấu chấm đầu dòng */
+  margin: 0;
+  padding: 0;
+}
+
+/* Xóa cài đặt mặc định của thẻ a */
+a {
+  text-decoration: none; /* Bỏ gạch chân */
+  color: inherit; /* Sử dụng màu sắc từ phần tử cha */
+}
+
+/* Xóa cài đặt mặc định của thẻ input */
+input {
+  border: none; /* Bỏ viền mặc định */
+  outline: none; /* Bỏ viền khi focus */
+  padding: 0;
+  margin: 0;
+  background: transparent; /* Bỏ nền mặc định */
+  box-shadow: none; /* Bỏ bóng mặc định */
+}
+/* Xóa các cài đặt mặc định của thẻ <select> */
+select {
+  -webkit-appearance: none; /* Xóa kiểu dáng mặc định trên các trình duyệt WebKit */
+  -moz-appearance: none; /* Xóa kiểu dáng mặc định trên các trình duyệt Firefox */
+  appearance: none; /* Xóa kiểu dáng mặc định trên các trình duyệt khác */
+  background-color: #fff; /* Màu nền của <select> */
+  border: 1px solid #ddd; /* Viền của <select> */
+  border-radius: 4px; /* Bo tròn góc của <select> */
+  padding: 10px; /* Khoảng cách bên trong của <select> */
+  font-size: 16px; /* Kích thước font của <select> */
+  color: #333; /* Màu chữ của <select> */
+  cursor: pointer; /* Con trỏ chuột khi di chuột qua <select> */
+}
+
+/* Tùy chỉnh kiểu dáng cho menu dropdown */
+select::-ms-expand {
+  display: none; /* Xóa mũi tên mặc định trên các trình duyệt Internet Explorer */
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.select-wrapper::after {
+  content: "▼"; /* Thay thế mũi tên mặc định bằng ký tự mũi tên tùy chỉnh */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Để mũi tên không chặn sự tương tác với <select> */
+  font-size: 16px;
+  color: #333;
+}
+
+/* Tùy chỉnh khi di chuột qua <select> */
+select:hover {
+  border-color: #aaa; /* Thay đổi màu viền khi di chuột qua */
+}
+
+/* Tùy chỉnh khi <select> bị focus */
+select:focus {
+  border-color: #007bff; /* Thay đổi màu viền khi <select> được focus */
+  outline: none; /* Xóa outline mặc định khi focus */
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+.hidden-scrollbar {
+  overflow: hidden; /* Ẩn thanh cuộn */
+}
+html ::-webkit-scrollbar {
+  border-radius: 0px;
+  width: 8px;
+}
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+html ::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(22, 24, 35, 0.06);
+}
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(22, 24, 35, 0.06);
+}
+html ::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+link {
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+li {
+  cursor: pointer;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
