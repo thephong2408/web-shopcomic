@@ -51,14 +51,14 @@ export default function Chapter() {
         <div className=" fixed bottom-10 right-10">
           <IoClose
             onClick={() => setShowComment(false)}
-            className="absolute top-10 right-5 text-[#ffffff] text-[30px]"
+            className="absolute top-10 right-5 text-[#ffffff] text-30"
           />
           <Comment />
         </div>
       )}
       {isVisible && (
-        <span className="w-full px-10 flex  items-center justify-between bg-[#141414] z-10 h-[70px]  fixed top-0">
-          <div className="w-[120px] ">
+        <span className="w-full lg:px-10 px-[10px] flex  items-center justify-between bg-[#141414] z-10 h-[70px]  fixed top-0">
+          <div className="lg:w-[120px] w-[50px] ">
             <Link href={"/"}>
               {" "}
               <img
@@ -67,18 +67,18 @@ export default function Chapter() {
               />
             </Link>
           </div>
-          <span className="flex items-center space-x-2 font-medium text-[22px] absolute top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 hover:text-[#d16428]">
+          <span className="flex items-center space-x-2 font-medium text-20 absolute top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 hover:text-[#d16428]">
             <Link href={"/card"}>
-              <span className="hover:text-[#d16428] cursor-pointer">
+              <span className="hover:text-[#d16428] cursor-pointer line-clamp-1">
                 Bệ Hạ Kiếp Này Ta Sẽ Hết Lòng Chăm Sóc Người
               </span>{" "}
             </Link>
-            <HiChevronRight />
-            <span>Chương 1</span>
+            <HiChevronRight className="text-[25px]" />
+            <span className="whitespace-nowrap">Chương 1</span>
           </span>
-          <span className="flex space-x-2">
+          <span className=" space-x-2 whitespace-nowrap flex items-center">
             <span>1</span>
-            <BiSolidLike className="text-[20px]" />
+            <BiSolidLike className="text-20" />
           </span>
         </span>
       )}
@@ -91,19 +91,19 @@ export default function Chapter() {
         </div>
       </div>
       {isVisible && (
-        <span className="w-full flex  items-center justify-end bg-[#141414] z-10 h-[70px] space-x-4 px-20 fixed bottom-0">
-          <HiChevronLeft className="text-[30px]" />
-          <HiChevronRight className="text-[30px]" />
+        <span className="w-full flex  items-center justify-end bg-[#141414] z-10 lg:h-[70px] py-[15px] space-x-4 px-20 fixed bottom-0">
+          <HiChevronLeft className="text-30" />
+          <HiChevronRight className="text-30" />
           <span className=" relative">
             {showChapter && (
-              <div className="absolute bottom-[155%] right-0 w-[375px]  shadow-md rounded-md overflow-hidden bg-[#141414] ">
-                <li className=" flex items-center pl-[20px] h-[45px] bg-[#242424]">
+              <div className="absolute lg:bottom-[155%] lg:right-0 lg:w-[375px] w-[200px] right-[0] bottom-[155%]  shadow-md rounded-md overflow-hidden bg-[#141414] ">
+                <li className=" flex items-center text-20 pl-[20px] h-[45px] bg-[#242424]">
                   Danh sách chương
                 </li>
-                <ul className="max-h-[500px] overflow-y-auto ">
+                <ul className="max-h-[500px] h-[350px] overflow-y-auto ">
                   {chapters.map((item: any, index: number) => (
                     <li
-                      className=" flex items-center pl-[20px] h-[50px] border-b-[1px] border-b-[#686868]"
+                      className=" flex items-center pl-[20px] h-[50px] border-b-[1px] border-b-[#686868] text-20"
                       key={index}
                     >
                       {item.name}
@@ -115,12 +115,12 @@ export default function Chapter() {
 
             <HiMiniRectangleStack
               onClick={handleClickShowChapter}
-              className={`text-[30px] ${showChapter ? "text-[#d16428]" : ""}`}
+              className={`text-30 ${showChapter ? "text-[#d16428]" : ""}`}
             />
           </span>
           <FaCommentAlt
             onClick={handleClickShowComment}
-            className="text-[30px]"
+            className="text-30 lg:flex hidden"
           />
         </span>
       )}

@@ -49,6 +49,7 @@ const FeedbackForm: React.FC = () => {
         ...prevValues,
         [name]: files,
       }));
+      console.log(newFileURLs);
     } else {
       setFormValues((prevValues) => ({
         ...prevValues,
@@ -64,15 +65,15 @@ const FeedbackForm: React.FC = () => {
   };
 
   return (
-    <div className="container space-y-[25px] flex flex-col text-[16px]">
-      <span className="text-[28px] font-medium">Phản hồi về ứng dụng</span>
+    <div className="container space-y-[25px] flex flex-col text-16">
+      <span className="text-28 font-medium">Phản hồi về ứng dụng</span>
       <span>Bạn vừa gặp phải vấn đề nào? Hãy nói cho chúng tớ biết nhé.</span>
       <form className="space-y-3" onSubmit={handleSubmit}>
         <div className="form-group flex flex-col">
-          <label className="text-[18px] font-medium mb-2" htmlFor="email">
+          <label className="text-18 font-medium mb-2" htmlFor="email">
             Email:
           </label>
-          <div className="w-full rounded-md h-[45px] bg-[#343434] px-[50px] flex items-center">
+          <div className="w-full rounded-md h-[45px] bg-[#343434] lg:px-[50px] px-[10px] flex items-center">
             <input
               type="text"
               id="email"
@@ -85,10 +86,7 @@ const FeedbackForm: React.FC = () => {
           </div>
         </div>
         <div className="form-group flex flex-col">
-          <label
-            className="text-[18px] font-medium mb-2"
-            htmlFor="feedbackType"
-          >
+          <label className="text-18 font-medium mb-2" htmlFor="feedbackType">
             Chọn mục phản hồi:
           </label>
           <select
@@ -96,7 +94,7 @@ const FeedbackForm: React.FC = () => {
             name="feedbackType"
             value={formValues.feedbackType}
             onChange={handleChange}
-            className="w-full rounded-md h-[45px] bg-[#343434] px-[50px] flex items-center text-white"
+            className="w-full text-16 rounded-md h-[45px] bg-[#343434] lg:px-[50px] px-[10px] flex items-center text-white"
           >
             <option value="suggestion">Vui lòng chọn mục phản hồi</option>
             <option value="complaint">Khiếu nại</option>
@@ -104,10 +102,10 @@ const FeedbackForm: React.FC = () => {
           </select>
         </div>
         <div className="form-group flex flex-col">
-          <label className="text-[18px] font-medium mb-2" htmlFor="name">
+          <label className="text-18 font-medium mb-2" htmlFor="name">
             Tên của bạn:
           </label>
-          <div className="w-full rounded-md h-[45px] bg-[#343434] px-[50px] flex items-center">
+          <div className="w-full rounded-md h-[45px] bg-[#343434] lg:px-[50px] px-[10px] flex items-center">
             <input
               type="text"
               id="name"
@@ -120,10 +118,10 @@ const FeedbackForm: React.FC = () => {
           </div>
         </div>
         <div className="form-group flex flex-col">
-          <label className="text-[18px] font-medium mb-2" htmlFor="phone">
+          <label className="text-18 font-medium mb-2" htmlFor="phone">
             Số điện thoại:
           </label>
-          <div className="w-full rounded-md h-[45px] bg-[#343434] px-[50px] flex items-center">
+          <div className="w-full rounded-md h-[45px] bg-[#343434] lg:px-[50px] px-[10px] flex items-center">
             <input
               type="tel"
               id="phone"
@@ -136,7 +134,7 @@ const FeedbackForm: React.FC = () => {
           </div>
         </div>
         <div className="form-group flex flex-col">
-          <label className="text-[18px] font-medium mb-2" htmlFor="comment">
+          <label className="text-18 font-medium mb-2" htmlFor="comment">
             Nhận xét:
           </label>
           <div className="w-full bg-[#343434] rounded-md overflow-y-auto h-[155px] p-[15px]">
@@ -153,18 +151,16 @@ const FeedbackForm: React.FC = () => {
         </div>
         {/* ảnh */}
         <div className="form-group flex flex-col">
-          <label className="text-[18px] font-medium mb-2" htmlFor="file">
+          <label className="text-18 font-medium mb-2" htmlFor="file">
             Hình chụp đính kèm (bắt buộc)
           </label>
-          <span className="text-[14px] mb-[1px] text-[#71716f]">
-            Tối đa 3 hình
-          </span>
+          <span className="text-14 mb-[1px] text-[#71716f]">Tối đa 3 hình</span>
           {/* lấy file ảnh */}
           <div className="space-x-5 w-full flex">
             {previewImages.map((image, index) => (
               <div
                 key={index}
-                className="relative size-[150px] rounded-md overflow-hidden bg-[#343434] flex items-center justify-center border-[1px] border-[#ff5622] border-dashed"
+                className="relative lg:size-[150px] size-[85px] rounded-md overflow-hidden bg-[#343434] flex items-center justify-center border-[1px] border-[#ff5622] border-dashed"
               >
                 <img
                   src={image}
@@ -174,7 +170,7 @@ const FeedbackForm: React.FC = () => {
               </div>
             ))}
             {previewImages.length < 3 && (
-              <div className="relative size-[150px] rounded-md bg-[#343434] flex items-center justify-center border-[1px] border-[#ff5622] border-dashed">
+              <div className="relative lg:size-[150px] size-[85px] rounded-md bg-[#343434] flex items-center justify-center border-[1px] border-[#ff5622] border-dashed">
                 <input
                   type="file"
                   id="file"
@@ -197,7 +193,7 @@ const FeedbackForm: React.FC = () => {
         {/* Submit Button */}
         <div className="pt-8">
           <button
-            className="w-[400px] h-[55px] bg-[#ff5622] text-[20px] font-medium rounded-md text-white"
+            className="lg:w-[400px] w-full h-[55px] bg-[#ff5622] text-20 font-medium rounded-md text-white"
             type="submit"
           >
             Gửi

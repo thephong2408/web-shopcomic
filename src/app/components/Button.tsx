@@ -27,33 +27,36 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       onClick={onClick}
-      className={`relative flex items-center px-[32px] py-[15px] h-[65px] text-[20px] rounded-md space-x-6 ${className}`}
+      className={`relative flex items-center lg:px-[32px] px-[20px] lg:py-[15px] py-[10px] lg:h-[65px] h-[45px] text-20 rounded-md space-x-6 ${className}`}
       {...props}
     >
-      {/* Thêm class tùy chỉnh cho icon */}
-      <span>{text}</span>
+      <span className="flex items-center space-x-2 ">
+        <span className="lg:text-30">{icon}</span>
+        {/* Thêm class tùy chỉnh cho icon */}
+        <span>{text}</span>
+      </span>
       {showPrice && (
-        <span className="flex items-center">
-          <div className="size-[30px]">
+        <span className="flex items-center space-x-1">
+          <div className="size-[30px] ">
             <img
               src="https://cdn.popsww.com/popsapp/static/images/topup/ic-coin.svg?format=webp"
               alt=""
             />
           </div>
-          <span className="text-[22px] text-[#ffdc0a]">{price}</span>
-          <span className="text-[18px] text-[#fbac9b] relative">
+          <span className="text-22 text-[#ffdc0a]">{price}</span>
+          <span className="text-18 text-[#fbac9b] relative">
             {price1}
             <div className="absolute w-full h-[1px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#fdd4c7]"></div>
           </span>
         </span>
       )}
       {showIcon && (
-        <div className="absolute bottom-[0] right-[-30px] transform  w-[60px]">
+        <div className="absolute bottom-[0] lg:right-[-30px] right-[-27px]  transform  lg:w-[60px] w-[45px]">
           <img
             src="https://cdn.popsww.com/popsapp/assets/images/icons/icon-hot-sale.png"
             alt=""
           />
-          <span className="absolute top-7 left-2 text-[18px] text-[#fff]">
+          <span className="absolute top-7 left-2 text-18 text-[#fff]">
             -15%
           </span>
         </div>

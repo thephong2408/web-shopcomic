@@ -3,10 +3,10 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="bg-[#1f1f1f] z-30  text-white pb-[50px] w-full px-[100px]">
-      <div className=" flex py-[50px] border-b-[1px] border-[#6a5c55]">
-        <div className="flex flex-col w-[25%] space-y-[15px] text-[18px]">
-          <div className="w-[120px] ">
+    <div className="bg-[#1f1f1f] z-30  text-white pb-[50px] w-full md:px-[100px] px-[10px] text-16">
+      <div className=" xl:flex  py-[50px] border-b-[1px] xl:space-y-0 space-y-[40px] border-[#6a5c55]">
+        <div className="flex flex-col xl:w-[25%] w-full space-y-[15px] text-18">
+          <div className="w-[120px]   ">
             <img
               src="https://cdn.popsww.com/popsapp/assets/images/icons/logo-pops.png?format=webp"
               alt=""
@@ -14,11 +14,11 @@ export default function Footer() {
             />
           </div>
 
-          <span>
+          <span className="w-full">
             Mạng xã hội chia sẻ các nội dung video giải trí chất lượng cao, phù
             hợp mọi độ tuổi và an toàn cho trẻ em.
           </span>
-          <span className="w-full flex justify-between">
+          <span className=" xl:w-full flex xl:justify-between space-x-3">
             {" "}
             <div className="w-[90px] h-[30px] ">
               <img
@@ -40,12 +40,12 @@ export default function Footer() {
             </div>
           </span>
         </div>
-        <div className="flex-2 flex justify-between mx-[80px] flex-grow-2 w-[50%]">
-          <div className="flex w-full ">
-            <nav className="w-[50%] space-y-[15px]">
+        <div className="xl:flex-2  flex justify-between xl:mx-[80px] xl:flex-grow-2 xl:w-[50%]">
+          <div className="sm:flex w-full sm:space-y-0  space-y-5">
+            <nav className="xl:w-[50%] w-full space-y-[15px]">
               <span
                 className="
-            text-[16px] font-bold text-[#7b8180]"
+             font-bold text-[#7b8180]"
               >
                 NỘI DUNG NGƯỜI LỚN
               </span>
@@ -66,10 +66,10 @@ export default function Footer() {
                 </ul>
               </div>
             </nav>
-            <ul className="w-[25%] space-y-[15px]">
+            <ul className="xl:w-[25%] w-full space-y-[15px]">
               <li
                 className="
-            text-[16px] font-bold text-[#7b8180]"
+             font-bold text-[#7b8180]"
               >
                 POPS KIDS
               </li>
@@ -79,10 +79,10 @@ export default function Footer() {
               <li>Giáo Dục</li>
               <li>Blog Thiếu Nhi</li>
             </ul>
-            <ul className="w-[25%] space-y-[15px]">
+            <ul className="xl:w-[25%] w-full space-y-[15px]">
               <li
                 className="
-            text-[16px] font-bold text-[#7b8180]"
+             font-bold text-[#7b8180]"
               >
                 HỖ TRỢ
               </li>
@@ -95,20 +95,20 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className=" w-[25%] flex flex-col space-y-[15px]  ">
-          <span className="text-[16px] font-bold text-[#7b8180] ">
+        <div className=" xl:w-[25%] w-full flex flex-col space-y-[15px]  ">
+          <span className=" font-bold text-[#7b8180] ">
             CÔNG TY CỔ PHẦN PHONG PHÚ SẮC VIỆT
           </span>
-          <span className="text-[14px]">
+          <span className="text-14">
             <strong>Địa chỉ:</strong>: Tầng 4, Block A, Viettel Complex Tower,
             285 Cách Mạng Tháng Tám, Phường 12, Quận 10, Thành phố Hồ Chí Minh
           </span>
-          <span className="text-[14px]">
+          <span className="text-14">
             <strong>Điện thoại:</strong>: +84 (28) 62921652
           </span>
-          <span className="text-[14px] flex">
+          <span className="text-14 flex space-x-1">
             <strong>Email : </strong>{" "}
-            <span className="text-[#f47213]">popsapp-support@popsww.com</span>
+            <span className="text-[#f47213]"> popsapp-support@popsww.com</span>
           </span>
         </div>
       </div>

@@ -13,10 +13,10 @@ const PackageTable: React.FC = () => {
           <div className=" relative w-[600px] h-[230px] bg-[#242424] flex justify-center items-center px-[100px] rounded-md overflow-hidden">
             <IoClose
               onClick={() => setOpen(false)}
-              className="absolute top-5 right-5 text-[#ffffff] text-[30px]"
+              className="absolute top-5 right-5 text-[#ffffff] text-30"
             />
-            <ul className="space-y-[25px] text-[18px] flex flex-col items-center">
-              <li className="text-center text-[26px] font-normal ">
+            <ul className="space-y-[25px] text-18 flex flex-col items-center">
+              <li className="text-center text-25 font-normal ">
                 Đăng ký gói 3NCT70{" "}
               </li>
               <li className="text-center ">

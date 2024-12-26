@@ -29,41 +29,45 @@ export default function Card() {
     <Layout1>
       <div className="min-h-[100vh] text-white flex flex-col mt-[80px] bg-[#141414]">
         {/* Sử dụng pseudo-element để làm mờ ảnh nền */}
-        <div className="  ">
-          <div className="w-full px-[100px] h-[620px] relative flex justify-between ">
-            <div className="w-full absolute left-0 top-0 h-[620px] filter opacity-55 blur-xl ">
+        <div className="md:w-full  ">
+          <div className="w-full xl:px-[100px] px-[10px] xl:h-[620px] relative xl:flex xl:justify-between xl:space-y-0 space-y-5 ">
+            {/* nền ảnh */}
+            <div className="w-full z-0 absolute left-0 top-0 h-[620px] filter opacity-55 blur-xl ">
               <img
                 src="https://pops-images-vn.akamaized.net/api/v2/containers/file2/cms_thumbnails/640x960-c270acfe693e-1710298245456-JmEm93uZ.jpg?v=0&maxW=420&format=webp"
                 alt=""
                 className="h-[100%]"
               />
             </div>
-            <div className="w-[315px] max-h-[480px]  z-10 rounded-md overflow-hidden shadow-lg">
-              <img
-                src="https://pops-images-vn.akamaized.net/api/v2/containers/file2/cms_thumbnails/640x960-c270acfe693e-1710298245456-JmEm93uZ.jpg?v=0&maxW=420&format=webp"
-                alt=""
-                className="h-[100%]"
-              />
+            {/* ảnh truyện */}
+            <div className="flex justify-center ">
+              <div className="lg:w-[315px] w-[50%] lg:max-h-[480px] z-10 rounded-md overflow-hidden shadow-lg">
+                <img
+                  src="https://pops-images-vn.akamaized.net/api/v2/containers/file2/cms_thumbnails/640x960-c270acfe693e-1710298245456-JmEm93uZ.jpg?v=0&maxW=420&format=webp"
+                  alt=""
+                  className="h-[100%]"
+                />
+              </div>
             </div>
             {/* Thông tin truyên */}
-            <div className="flex-1  ml-[50px] text-white z-10 relative top-[-10px]  ">
+            <div className="flex-1  lg:ml-[50px] text-white z-10 relative top-[-10px]  ">
               <nav className="w-full  flex flex-col space-y-[30px]">
-                <ul className="text-[36px] font-bold ">
+                <ul className="text-36 font-bold ">
                   Bệ Hạ Kiếp Này Ta Sẽ Hết Lòng Chăm Sóc Người
                 </ul>
-                <ul className="flex space-x-[15px]">
+                <ul className="flex justify-between lg:justify-start lg:space-x-[15px] lg:text-[20px] text-[14px]">
                   <span className="flex items-center space-x-[2px]">
-                    <BsEyeglasses className="text-[25px] mr-2" />
+                    <BsEyeglasses className="text-25 mr-2" />
                     <span className="text-[#f47213]">14.67K</span>{" "}
-                    <span>Lượt xem</span>
+                    <span className="">Lượt xem</span>
                   </span>
                   <span className="flex space-x-[2px] items-center">
-                    <BiSolidLike className="text-[25px] mr-2" />
+                    <BiSolidLike className="text-25 mr-2" />
                     <span className="text-[#f47213]"> 108</span>{" "}
                     <span>Thích</span>
                   </span>
                   <span className="flex space-x-[2px] items-center">
-                    <ImBook className="text-[25px] mr-2" />
+                    <ImBook className="text-25 mr-2" />
                     <span className="text-[#f47213]"> 77</span>{" "}
                     <span>chương</span>
                   </span>
@@ -72,7 +76,7 @@ export default function Card() {
                   <Button
                     onClick={handleRouter}
                     text={"ĐỌC NGAY"}
-                    className={"text-white bg__button"}
+                    className={" bg__button"}
                   />
                   <Button
                     onClick={handleRouter}
@@ -85,7 +89,7 @@ export default function Card() {
                     onClick={() => setLike(!like)}
                     text={`${!like ? "YÊU THÍCH" : "ĐÃ LƯU"}`}
                     icon={like ? <FaCheck /> : <IoIosAdd />}
-                    iconClassName="text-[25px]"
+                    iconClassName="text-25"
                     className="text-black bg-white hover:text-[#f47213] "
                   />
                 </ul>
@@ -108,7 +112,7 @@ export default function Card() {
                   <li className="text-[#ccc] break-words ">
                     <h3>MÔ TẢ :</h3>
                     <span
-                      className={`text-white text-[20px] ${
+                      className={`text-white text-20 ${
                         text ? "truncate-lines-3" : ""
                       }`}
                     >
@@ -124,7 +128,7 @@ export default function Card() {
               </nav>
               <span
                 onClick={() => setText(!text)}
-                className="text-[#ccc] text-[20px]  border-b-2 cursor-pointer"
+                className="text-[#ccc] text-20  border-b-2 cursor-pointer"
               >
                 {text ? "xem thêm" : "Thu gọn"}
               </span>
@@ -132,7 +136,7 @@ export default function Card() {
           </div>
         </div>
         {/* bình luận và chương */}
-        <div className="h-[60px] text-[20px] bg-[#232323] z-10 flex justify-center items-center ">
+        <div className="h-[60px] text-20 bg-[#232323] z-10 flex justify-center items-center ">
           <span
             onClick={() => setShow(!show)}
             className={`h-full px-10 border-2 border-transparent  flex items-center cursor-pointer ${

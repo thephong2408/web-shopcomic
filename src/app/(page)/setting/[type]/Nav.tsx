@@ -2,15 +2,15 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav className="w-full space-y-[20px] text-[16px]">
-      <ul className="text-[28px] font-medium">Thông tin ứng dụng</ul>
+    <nav className="w-full lg:space-y-[20px] space-y-[10px] text-16">
+      <ul className="text-28 font-medium">Thông tin ứng dụng</ul>
       <ul>
         <li className="text-[#bcbcbc]">Phiên bản 4.48.1</li>
         <li className="text-[#bcbcbc]">https://pops.vn</li>
         <li className="text-[#bcbcbc]">Email: popsapp-support@popsww.com</li>
         <li className="text-[#bcbcbc]">2018 Bản quyền của POPS Worldwide</li>
       </ul>
-      <ul className="text-[28px] font-medium">Về POPS</ul>
+      <ul className="text-28 font-medium">Về POPS</ul>
       <ul>
         <li className="text-[#bcbcbc]">CÔNG TY CỔ PHẦN PHONG PHÚ SẮC VIỆT</li>
         <li className="text-[#bcbcbc]">

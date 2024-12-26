@@ -12,8 +12,8 @@ export default function page() {
   return (
     <Layout1>
       <div className="min-h-screen mt-[100px] px-[100px]">
-        <span className="text-[32px] font-bold">Yêu thích</span>
-        <span className="flex text-[20px] cursor-pointer">
+        <span className="text-30 font-bold">Yêu thích</span>
+        <span className="flex text-20 cursor-pointer">
           <span
             onClick={() => setShow(true)}
             className={`p-[20px] border-b-[3px]  ${
@@ -33,10 +33,10 @@ export default function page() {
         </span>
         {user && (
           <span className="w-full flex flex-col text-center mt-[110px] space-y-[10px] ">
-            <span className="text-[32px] font-bold">
+            <span className="text-30 font-bold">
               Ơ ấy ơi, bạn chưa đăng nhập.
             </span>
-            <span className="text-[20px]">
+            <span className="text-20">
               Tính năng chỉ dành cho thành viên. Vui lòng đăng nhập hoặc đăng ký
               tài khoản mới để sử dụng nhé!
             </span>

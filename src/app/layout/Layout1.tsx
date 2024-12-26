@@ -6,10 +6,12 @@ export default function Layout1({
   children: React.ReactNode;
 }>) {
   return (
-    <div>
-      <Header />
-      <div>{children}</div>
-      <Footer />
-    </div>
+    <html className="w-full">
+      <body className="">
+        <Header />
+        <div>{children}</div>
+        <Footer />
+      </body>
+    </html>
   );
 }

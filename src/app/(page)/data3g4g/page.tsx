@@ -6,14 +6,14 @@ export default function Data3g() {
   return (
     <Layout1>
       <div className="space-y-[30px] px-[100px] py-[100px]">
-        <span className="text-[28px] font-medium">Thông tin ứng dụng</span>
+        <span className="text-28 font-medium">Thông tin ứng dụng</span>
         <div className="w-[300px]">
           <img
             src="https://cdn.popsww.com/popsapp/assets/images/mobifone.png?format=webp"
             alt=""
           />
         </div>
-        <ul className="font-normal text-[18px]">
+        <ul className="font-normal text-18">
           <li>
             (*) Nếu bạn chưa xác minh số điện thoại hoặc chưa có tài khoản trên
             POPS, vui lòng làm theo hướng dẫn sử dụng bên dưới để đăng ký gói
@@ -25,7 +25,7 @@ export default function Data3g() {
           </li>
           <li>(***) 1 chu kỳ tương đương 30 ngày.</li>
         </ul>
-        <h1 className="text-[35px] font-medium">Miễn phí dung lượng 3G/4G</h1>
+        <h1 className="text-34 font-medium">Miễn phí dung lượng 3G/4G</h1>
 
         {/* các bảng */}
         {/* <!-- HTML + Tailwind CSS --> */}

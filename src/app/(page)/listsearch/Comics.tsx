@@ -17,7 +17,7 @@ export default function Comics() {
   }
 
   return (
-    <div className=" grid grid-cols-7 gap-5 py-[30px]">
+    <div className=" grid xl:grid-cols-7 md:grid-cols-5 grid-cols-2 gap-5 py-[30px]">
       {data.map((item: any, index: number) => (
         <Card shop={false} />
       ))}

@@ -6,11 +6,11 @@ export default function Setting1() {
   const [isOn, setIsOn] = useState<boolean>(false);
   return (
     <span>
-      <span className="text-[30px] font-bold">Cài đặt chung</span>
-      <span className=" space-x-[105px] flex">
-        <ul>
-          <li className="text-[16px] font-bold">Tự động mở video tiếp theo</li>
-          <li className="text-[14px] text-[#eaeaea]">
+      <span className="text-30 font-bold">Cài đặt chung</span>
+      <nav className=" lg:space-x-[105px] space-x-4 flex lg:justify-start lg:items-start items-center">
+        <ul className="">
+          <li className="text-16 font-bold">Tự động mở video tiếp theo</li>
+          <li className="text-14 text-[#eaeaea]">
             Video tiếp theo sẽ tự động được mở
           </li>
         </ul>
@@ -23,7 +23,7 @@ export default function Setting1() {
             )}
           </button>
         </span>
-      </span>
+      </nav>
     </span>
   );
 }

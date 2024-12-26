@@ -5,11 +5,9 @@ import Button from "@/app/components/Button";
 import { IoStar } from "react-icons/io5";
 import { IoShareSocial } from "react-icons/io5";
 import Alert from "@/app/components/Alert";
-import Share from "@/app/components/Share";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import Link from "next/link";
-import Buy from "@/app/components/Buy";
 
 export default function page() {
   const [open, setOpen] = useState<boolean>(false);
@@ -17,11 +15,11 @@ export default function page() {
 
   return (
     <Layout1>
-      <div className="relative lg:min-h-screen text-18 lg:py-0 pb-[20px] ">
+      <div className="relative min-h-screen text-18 ">
         {open1 && (
           <Alert>
             <div className="w-full h-full p-[30px]">
-              <ul className="lg:space-y-[35px] space-y-[15px]">
+              <ul className="space-y-[35px]">
                 <li className="flex items-center justify-between text-30 font-bold ">
                   <div className="rounded-full h-[40px] flex items-center overflow-hidden space-x-1 text-18 ">
                     <div className="flex space-x-1 items-center bg-[#4b4a4d] p-2">
@@ -73,15 +71,57 @@ export default function page() {
             </div>
           </Alert>
         )}
+        {open && (
+          <Alert>
+            <div className="w-full h-full p-[30px]">
+              <ul className="space-y-[35px]">
+                <li className="flex items-center justify-between text-30 font-bold ">
+                  <span className="text-[#ffffff] ">Chia sẻ</span>
 
-        <div className="lg:absolute w-full lg:h-[620px] h-auto top-0 left-0 z-0 ">
-          <img
-            src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_thumbnails/1920x1080-0d9f3c4a9e5c-1724816733213-joAxVCt2.jpg?v=0&format=webp"
-            alt=""
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <ul className="relative px-100 lg:py-[120px] pt-[10px] space-y-[20px] z-20">
+                  <IoClose onClick={() => setOpen(false)} className=" " />
+                </li>
+                <li className="w-full ">
+                  <ul className="flex w-full justify-around items-center">
+                    <li className="flex flex-col space-y-[10px] items-center">
+                      <div className="size-[80px] rounded-full">
+                        <img
+                          src="https://lucas.vn/wp-content/uploads/2023/08/logo-fb.webp"
+                          alt=""
+                        />
+                      </div>
+                      <span>Facebook</span>
+                    </li>
+                    <li className="flex flex-col space-y-[10px] items-center">
+                      <div className="size-[80px] rounded-full">
+                        <img
+                          src="https://haiauint.vn/wp-content/uploads/2024/02/zalo-icon.png"
+                          alt=""
+                        />
+                      </div>
+                      <span>Zalo</span>
+                    </li>{" "}
+                    <li className="flex flex-col space-y-[10px] items-center">
+                      <div className="size-[80px] rounded-full overflow-hidden">
+                        <img
+                          src="https://w7.pngwing.com/pngs/651/194/png-transparent-messenger-logo-logo-facebook-messenger-telegram-instant-messaging-chatbot-circle-social-facebook-messenger-logo-miscellaneous-blue-text-thumbnail.png"
+                          alt=""
+                        />
+                      </div>
+                      <span>Messenger</span>
+                    </li>
+                  </ul>
+                </li>
+                <li className="w-full flex items-center justify-between h-[40px] bg-[#242424] rounded-md px-5">
+                  <span className="max-w-[400px] overflow-hidden whitespace-nowrap text-ellipsis">
+                    https://pops.vn/bundle/POBD-240828-104631-RCTDXR?p-sid=EYJHBGCIOIJ66CF3BE3B43191AE7D0D33
+                  </span>
+                  <span className="text-[#ed4d2d]">COPY</span>
+                </li>
+              </ul>
+            </div>
+          </Alert>
+        )}
+        <ul className="relative px-100 py-[120px] space-y-[20px] z-20">
           <li className="space-y-[2px]">
             <div className="text-16 flex justify-start space-x-2 items-center">
               <span className="text-[#f47213]">MUA NGAY</span>
@@ -100,11 +140,31 @@ export default function page() {
             </p>
           </li>
           <li className=" flex space-x-[50px] items-center">
-            <Buy />
-            <Share />
+            <Button
+              onClick={() => setOpen1(true)}
+              text="Mua ngay"
+              showPrice={true}
+              showIcon={true}
+              price="300"
+              price1="255"
+              className="bg__button font-bold 5px]"
+            />
+
+            <button
+              onClick={() => setOpen(true)}
+              className="size-[60px] rounded-full border-[1px] border-[#fff]"
+            >
+              <IoShareSocial className="text-30" />
+            </button>
           </li>
         </ul>
-
+        <div className="absolute w-full h-[620px] top-0 left-0 z-0 ">
+          <img
+            src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_thumbnails/1920x1080-0d9f3c4a9e5c-1724816733213-joAxVCt2.jpg?v=0&format=webp"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="absolute top-0 left-0 w-full h-full bg_img2 z-10"></div>
       </div>
     </Layout1>

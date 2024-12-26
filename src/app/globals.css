@@ -15,6 +15,55 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+/* cỡ chữ */
+.text-12 {
+  font-size: 12px;
+}
+.text-14 {
+  font-size: 14px;
+}
+.text-16 {
+  font-size: 16px;
+}
+.text-18 {
+  font-size: 18px;
+}
+.text-20 {
+  font-size: 20px;
+}
+.text-22 {
+  font-size: 22px;
+}
+.text-25 {
+  font-size: 25px;
+}
+.text-28 {
+  font-size: 28px;
+}
+.text-34 {
+  font-size: 34px;
+}
+.text-36 {
+  font-size: 36px;
+}
+.text-35 {
+  font-size: 35px;
+}
+.text-36 {
+  font-size: 36px;
+}
+.text-30 {
+  font-size: 30px;
+}
+.text-40 {
+  font-size: 40px;
+}
+.text-48 {
+  font-size: 48px;
+}
+.text-50 {
+  font-size: 50px;
+}
 button {
   display: flex;
   justify-content: center;
@@ -22,7 +71,6 @@ button {
 }
 img {
   width: 100%;
-
   object-fit: cover;
 }
 body {
@@ -31,8 +79,22 @@ body {
   font-size: 62.5%;
   font-size: 16px;
 }
-html {
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden; /* Ngăn tràn ngang */
+  box-sizing: border-box;
 }
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden; /* Ngăn tràn ngang */
+  box-sizing: border-box;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -65,6 +127,9 @@ html {
 .bg__alert {
   background-color: rgba(0, 0, 0, 0.5);
 }
+.fixed.top-0.left-0.p-0.mb-0.bg__alert.w-full.h-full.flex.justify-center.items-center.z-50 {
+  margin: 0;
+}
 .bg_img {
   background: radial-gradient(
         circle at center,
@@ -81,12 +146,20 @@ html {
 .bg_img2 {
   background: linear-gradient(to top, rgba(0, 0, 0, 1) 20%, transparent 50%)
       no-repeat,
-    linear-gradient(to bottom, rgba(0, 0, 0, 1) 5%, transparent 50%) no-repeat,
-    linear-gradient(to right, rgba(0, 0, 0, 1) 40%, transparent 50%) no-repeat;
+    linear-gradient(to bottom, rgba(0, 0, 0, 1) 2%, transparent 50%) no-repeat,
+    linear-gradient(to right, rgba(0, 0, 0, 1) 20%, transparent 50%) no-repeat;
 }
-
+.bg_img3 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 1) 1%, transparent 100%)
+    no-repeat;
+}
 .bg_img1 {
   background-color: rgb(0, 0, 0, 0.9);
+}
+
+.border-shadow:hover {
+  box-shadow: 0px 0px 20px 2px rgb(255, 106, 37); /* Even shadow on all four sides */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
 }
 
 /* Xóa cài đặt mặc định của thẻ li */
@@ -94,6 +167,11 @@ li {
   list-style: none; /* Bỏ dấu chấm đầu dòng */
   margin: 0;
   padding: 0;
+}
+/* CSS để ẩn nút điều hướng trái và phải */
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
 }
 
 /* Xóa cài đặt mặc định của thẻ a */
@@ -197,6 +275,103 @@ button {
 li {
   cursor: pointer;
 }
+.center {
+  display: flex;
+  align-items: center;
+}
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none; /* Loại bỏ giao diện WebKit */
+  -moz-appearance: none; /* Loại bỏ giao diện Firefox */
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: #fff;
+  font-size: 20px;
+}
+select {
+  appearance: none; /* Loại bỏ kiểu dáng mặc định */
+  -webkit-appearance: none; /* Loại bỏ trên Safari */
+  -moz-appearance: none; /* Loại bỏ trên Firefox */
+  border: none; /* Xoá đường viền */
+  background: #343434; /* Nền tối */
+  color: white; /* Chữ trắng */
+  padding: 0.5rem; /* Thêm padding */
+  border-radius: 0.375rem; /* Bo góc */
+  outline: none; /* Xoá đường viền focus */
+}
+
+select:focus {
+  outline: 2px solid #ff6600; /* Thêm viền cam khi focus */
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none; /* Loại bỏ kiểu mặc định trên trình duyệt WebKit */
+  -moz-appearance: none; /* Loại bỏ kiểu mặc định trên trình duyệt Firefox */
+  appearance: none; /* Loại bỏ kiểu mặc định chung */
+
+  /* Kiểu dáng cơ bản */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative; /* Để định vị ::after */
+}
+
+input[type="checkbox"]:checked {
+  background-color: #ed4d2d;
+  border-color: #ed4d2d;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✿";
+  color: white; /* Màu của dấu ✔ */
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.px-100 {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+@media (max-width: 768px) {
+  /* Chữ từ 20px trở xuống giảm xuống 14px */
+  .text-22,
+  .text-25,
+  .text-20,
+  .text-18,
+  .text-16,
+  .text-14 {
+    font-size: 12px;
+  }
+
+  /* Chữ từ 20px trở lên tăng lên 18px */
+  .text-28,
+  .text-30,
+  .text-34,
+  .text-35,
+  .text-36,
+  .text-40,
+  .text-48,
+  .text-50 {
+    font-size: 16px;
+  }
+  .px-100 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .bg_img2 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 20%, transparent 50%)
+        no-repeat,
+      linear-gradient(to bottom, rgba(0, 0, 0, 1) 2%, transparent 50%) no-repeat;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

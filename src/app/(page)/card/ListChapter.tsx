@@ -8,17 +8,17 @@ export default function ListChap() {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const [show, setShow] = useState(true);
   return (
-    <div className="w-[775px] relative flex justify-between my-10 bg-[#1f1f1f] p-[30px] rounded-xl">
+    <div className="lg:w-[775px] w-full relative flex justify-between my-10 bg-[#1f1f1f] lg:p-[30px] p-[15px] rounded-xl">
       <nav className="w-full flex flex-col ">
         <ul className="flex justify-between">
           <li className="flex flex-col">
-            <span className="text-[20px] font-bold">77 chương</span>
-            <span className="text-[18px] text-[#b0b0b0]">
+            <span className="text-20 font-bold">77 chương</span>
+            <span className="text-18 text-[#b0b0b0]">
               Truyện phát hành thứ 3, 5, 7
             </span>
           </li>
-          <li className="text-[16px] font-bold text-white flex items-center">
-            <span>Sắp xếp</span> <BiSortDown className="ml-2 text-[25px]" />
+          <li className="text-16 font-bold text-white flex items-center">
+            <span>Sắp xếp</span> <BiSortDown className="ml-2 text-25" />
           </li>
         </ul>
         {/* danh sách cương */}
@@ -28,36 +28,35 @@ export default function ListChap() {
           {arr.map((item: any, index: number) => (
             <ul
               key={index}
-              className="h-[170px] flex justify-between items-center border-b-[1px] py-[70px] "
+              className="lg:h-[170px] flex justify-between items-center border-b-[1px] lg:py-[70px] py-[20px] "
             >
               <li className="w-[50%] flex items-center space-x-5">
-                <div className="relative size-[125px] bg-white rounded-md overflow-hidden">
+                <div className="relative lg:size-[125px] size-[70px] bg-white rounded-md overflow-hidden">
                   <img
+                    className="w-full h-full"
                     src="https://pops-images-vn.akamaized.net/api/v2/containers/file2/cms_thumbnails/1-3e509675c539-1710410485211-iNWFijYP.jpg?v=0&maxW=200&format=webp"
                     alt=""
                   />
                   {item >= 3 && (
                     <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.5)] flex justify-center items-center">
-                      <IoIosLock className="text-[40px] text-white" />
+                      <IoIosLock className="text-40 text-white" />
                     </div>
                   )}
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[24px] font-bold">Chương 0{item}</span>
-                  <span className="text-[#cacaca] text-[16px]">
+                  <span className="text-25 font-bold">Chương 0{item}</span>
+                  <span className="text-[#cacaca] whitespace-nowrap text-16">
                     March 16,2024{" "}
                   </span>
                 </div>
               </li>
-              <li className="text-[20px] font-normal text-[#e97131]">
-                MIỄN PHÍ
-              </li>
+              <li className="text-20 font-normal text-[#e97131]">MIỄN PHÍ</li>
             </ul>
           ))}
         </div>
         <ul
           onClick={() => setShow(!show)}
-          className="flex justify-center items-center mt-[20px]  text-[20px] font-medium cursor-pointer"
+          className="flex justify-center items-center mt-[20px]  text-20 font-medium cursor-pointer"
         >
           {!show ? "Thu gọn" : "Xem thêm"}
         </ul>
