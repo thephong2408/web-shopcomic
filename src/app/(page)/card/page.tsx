@@ -59,7 +59,7 @@ export default function Card() {
                   <span className="flex items-center space-x-[2px]">
                     <BsEyeglasses className="text-25 mr-2" />
                     <span className="text-[#f47213]">14.67K</span>{" "}
-                    <span className="">Lượt xem</span>
+                    <span>Lượt xem</span>
                   </span>
                   <span className="flex space-x-[2px] items-center">
                     <BiSolidLike className="text-25 mr-2" />

@@ -8,7 +8,7 @@ export default function Setting1() {
     <span>
       <span className="text-30 font-bold">Cài đặt chung</span>
       <nav className=" lg:space-x-[105px] space-x-4 flex lg:justify-start lg:items-start items-center">
-        <ul className="">
+        <ul>
           <li className="text-16 font-bold">Tự động mở video tiếp theo</li>
           <li className="text-14 text-[#eaeaea]">
             Video tiếp theo sẽ tự động được mở

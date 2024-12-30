@@ -11,7 +11,7 @@ export default function page() {
 
   return (
     <Layout1>
-      <div className="min-h-screen mt-[100px] px-[100px]">
+      <div className="lg:min-h-screen h-auto mt-[100px] px-100">
         <span className="text-30 font-bold">Yêu thích</span>
         <span className="flex text-20 cursor-pointer">
           <span

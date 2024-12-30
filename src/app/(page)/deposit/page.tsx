@@ -224,7 +224,7 @@ export default function page() {
               Tóm tắt đơn hàng
             </li>
             <li className="py-[20px] flex justify-between items-center">
-              <span className="">Gói POPS Stars</span>
+              <span>Gói POPS Stars</span>
               <span className="flex items-center space-x-2">
                 <div className="size-[30px]">
                   <img
@@ -236,7 +236,7 @@ export default function page() {
               </span>
             </li>
             <li className="py-[20px] flex justify-between items-center">
-              <span className="">POPS Stars tặng thêm</span>
+              <span>POPS Stars tặng thêm</span>
               <span className="flex items-center space-x-2">
                 <div className="size-[30px]">
                   <img
@@ -248,7 +248,7 @@ export default function page() {
               </span>
             </li>{" "}
             <li className="py-[20px] flex justify-between items-center">
-              <span className="">Tổng POPS Starss</span>
+              <span>Tổng POPS Starss</span>
               <span className="flex items-center space-x-2">
                 <div className="size-[30px]">
                   <img
@@ -260,13 +260,13 @@ export default function page() {
               </span>
             </li>{" "}
             <li className="py-[20px] flex justify-between items-center border-b-[1px] border-b-[#6b6b6b]">
-              <span className="">Tổng tiền</span>
+              <span>Tổng tiền</span>
               <span className="flex items-center space-x-2">
                 <span className="font-bold ">25.000 đ</span>
               </span>
             </li>
             <li className="py-[20px] flex justify-between items-center text-[#ff6a00]">
-              <span className="">Chi phí</span>
+              <span>Chi phí</span>
               <span className="flex flex-col space-y-1 items-end">
                 <span className="flex items-center space-x-2">
                   <div className="size-[30px]">

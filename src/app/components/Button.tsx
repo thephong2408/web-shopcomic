@@ -27,7 +27,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       onClick={onClick}
-      className={`relative flex items-center lg:px-[32px] px-[20px] lg:py-[15px] py-[10px] lg:h-[65px] h-[45px] text-20 rounded-md space-x-6 ${className}`}
+      className={`relative flex items-center lg:px-[32px] px-[20px] lg:py-[15px] py-[10px] lg:h-[65px] h-auto text-20 rounded-md space-x-6 ${className}`}
       {...props}
     >
       <span className="flex items-center space-x-2 ">

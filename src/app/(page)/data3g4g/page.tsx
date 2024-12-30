@@ -5,7 +5,7 @@ import PackageTable from "./Table";
 export default function Data3g() {
   return (
     <Layout1>
-      <div className="space-y-[30px] px-[100px] py-[100px]">
+      <div className="space-y-[30px] px-100 py-[100px]">
         <span className="text-28 font-medium">Thông tin ứng dụng</span>
         <div className="w-[300px]">
           <img

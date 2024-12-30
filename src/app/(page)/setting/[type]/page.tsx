@@ -66,7 +66,7 @@ export default function Setting() {
                   </div>
                   <ul className="text-[#ccc]">
                     <li className="text-14 text-white">Phongda</li>
-                    <li className="">User ID: 7uehdwi862h28e</li>
+                    <li>User ID: 7uehdwi862h28e</li>
                     <li>Tham gia từ: 28 Aug 2024</li>
                   </ul>
                 </div>
@@ -91,7 +91,7 @@ export default function Setting() {
                     </div>
                     <span className="text-30 font-bold text-[#ea6017]">0</span>
                   </li>
-                  <li className="">
+                  <li>
                     <Link href={"/deposit"}>
                       <button className="bg-[#ea6017] rounded-md px-[20px] py-[10px] space-x-2">
                         <PiHandDepositFill className="text-20" />{" "}

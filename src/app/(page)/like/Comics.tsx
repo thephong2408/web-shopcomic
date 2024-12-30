@@ -5,9 +5,7 @@ import Card from "@/app/components/Card";
 import { useState } from "react";
 
 export default function Comics() {
-  const [data, setData] = useState<any>([
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 7, 8, 7, 5,
-  ]);
+  const [data, setData] = useState<any>([]);
   if (data.length === 0) {
     return (
       <div>
@@ -17,9 +15,9 @@ export default function Comics() {
   }
 
   return (
-    <div className=" grid grid-cols-7 gap-5 py-[30px]">
+    <div className=" grid lg:grid-cols-7 grid-cols-2  gap-5 py-[30px]">
       {data.map((item: any, index: number) => (
-        <Card shop={false} />
+        <Card key={index} shop={false} />
       ))}
     </div>
   );

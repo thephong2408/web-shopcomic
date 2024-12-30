@@ -6,11 +6,11 @@ import { useState } from "react";
 const PackageTable: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
   return (
-    <div className="container mx-auto  bg-[#343434] border-gray-300 rounded-md border">
+    <div className="container mx-auto overflow-x-auto  bg-[#343434] border-gray-300 rounded-md border">
       {/* thông báo */}
       {open && (
         <div className="fixed top-0 left-0 z-50 w-full bg__alert h-full flex justify-center items-center ">
-          <div className=" relative w-[600px] h-[230px] bg-[#242424] flex justify-center items-center px-[100px] rounded-md overflow-hidden">
+          <div className=" relative w-[600px] overflow-x-auto h-[230px] bg-[#242424] flex justify-center items-center px-[100px] rounded-md overflow-hidden">
             <IoClose
               onClick={() => setOpen(false)}
               className="absolute top-5 right-5 text-[#ffffff] text-30"
@@ -24,8 +24,7 @@ const PackageTable: React.FC = () => {
                 tin theo cú pháp:
               </li>
               <li className="text-center flex space-x-1 ">
-                <span className="text-[#f28121]">3NCT70</span>{" "}
-                <span className="">gửi</span>{" "}
+                <span className="text-[#f28121]">3NCT70</span> <span>gửi</span>{" "}
                 <span className="text-[#f28121]">999</span>
               </li>
             </ul>

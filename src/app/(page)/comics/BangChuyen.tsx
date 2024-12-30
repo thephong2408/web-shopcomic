@@ -60,12 +60,7 @@ export default function Bangchuyen() {
       </div>
       <div className="lg:absolute bottom-0 w-full px-100 z-10  ">
         {" "}
-        <Swiper2
-          number={number}
-          text={"Chương Mới - Xem Ngay!"}
-          shop={false}
-          className=""
-        />
+        <Swiper2 number={number} text={"Chương Mới - Xem Ngay!"} shop={false} />
       </div>
       {/* ảnh băng chuyền ảnh  */}
     </div>

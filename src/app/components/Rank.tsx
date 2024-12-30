@@ -8,7 +8,10 @@ export default function Rank() {
     <div className="px-100">
       <nav className="flex lg:flex-row flex-col lg:space-x-[15px]">
         {arr1.map((item: any, index: number) => (
-          <ul className="flex-1 rounded-md overflow-hidden space-y-[1px]">
+          <ul
+            key={index}
+            className="flex-1 rounded-md overflow-hidden space-y-[1px]"
+          >
             {arr.map((item: any, index: number) => (
               <li key={index}>
                 {/* Sử dụng một thuộc tính duy nhất như item.id */}

@@ -16,12 +16,13 @@ export default function Video() {
     );
   }
   return (
-    <div className=" grid grid-cols-4 gap-10 py-[30px]">
+    <div className=" grid lg:grid-cols-4 grid-cols-2 lg:gap-10 gap-2 lg:py-[30px] py-[10px]">
       {data.map((item: any, index: number) => (
         <Card1
+          key={index}
           shop={false}
           textCard="K-ICM ft. Văn Mai Hương, Lê Bống"
-          height={200}
+          height={150}
         />
       ))}
     </div>

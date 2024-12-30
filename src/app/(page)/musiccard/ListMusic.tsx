@@ -18,7 +18,7 @@ export default function ListChap() {
   return (
     <div className="w-[775px] relative flex justify-between my-10 bg-[#1f1f1f] p-[30px] rounded-xl">
       <nav className="w-full flex flex-col ">
-        <ul className="">
+        <ul>
           <button
             onMouseEnter={() => setShow1(true)}
             onMouseLeave={() => setShow1(false)}

@@ -17,7 +17,7 @@ export default function Information() {
   const [like, setLike] = useState<boolean>(true);
   const [open, setOpen] = useState<boolean>(false);
   return (
-    <div className="">
+    <div>
       {/* chia sẻ alert */}
       {open && (
         <Alert>
@@ -92,7 +92,7 @@ export default function Information() {
                   like ? "" : "text-[#ed4d2d]"
                 }`}
               >
-                <span className="">
+                <span>
                   <BiSolidLike className="text-25" />
                 </span>
                 <span>{like ? "Thích" : "Đã Thích"}</span>
@@ -140,8 +140,8 @@ export default function Information() {
         <ul className="xl:flex xl:justify-between w-full py-[35px] xl:space-y-0 space-y-5">
           <li className="xl:w-[60%] ">
             <ul className="flex flex-col text-20">
-              <li className="">
-                <stop className="text-[#939393]">Mô tả</stop> : CHIM QUÝ TRONG
+              <li>
+                <span className="text-[#939393]">Mô tả</span> : CHIM QUÝ TRONG
                 LỒNG - K-ICM X VĂN MAI HƯƠNG X LÊ BỐNG | OFFICIAL MV
               </li>
               <li>
@@ -172,7 +172,7 @@ export default function Information() {
               </li>
               <li className="center space-x-1 ">
                 <span>Xếp Hạng</span>
-                <span className="">16+</span>
+                <span>16+</span>
               </li>
               <li className="center space-x-1 ">
                 <span>Danh mục:</span>

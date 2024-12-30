@@ -12,14 +12,14 @@ interface ZeroProps {
 
 const Zero: React.FC<ZeroProps> = ({ message }) => {
   return (
-    <div className="mt-[100px] w-full flex justify-center items-center">
+    <div className="lg:mt-[100px] my-[55px] lg:w-full  flex justify-center items-center">
       <div className="flex flex-col items-center">
         <span className="text-25 font-bold mb-[20px]">{message}</span>
-        <div className="relative h-[215px] w-[425px] border rounded-md flex justify-center items-center">
+        <div className="relative lg:h-[215px] h-[150px] lg:w-[425px] w-[300px] border rounded-md flex justify-center items-center">
           <span className="text-18 w-[270px] text-center bg-[#141414] z-20 absolute top-[-14px] left-1/2 -translate-x-1/2">
             Cách thêm vào danh sách
           </span>
-          <ul className="space-x-[35px] flex">
+          <ul className="lg:space-x-[35px] space-x-[15px] flex">
             <li className="flex items-center flex-col">
               <span>
                 <MdOutlineAddBox className="text-40" />

@@ -3,9 +3,5 @@ export default function Layout2({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  );
+  return <div>{children}</div>;
 }
