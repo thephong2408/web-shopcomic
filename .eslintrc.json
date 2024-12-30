@@ -1,3 +1,9 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals", // Cấu hình mặc định của Next.js
+    "plugin:react/recommended" // Cấu hình plugin React
+  ],
+  "rules": {
+    "react/no-unescaped-entities": "error" // Báo lỗi khi phát hiện ký tự chưa escape
+  }
 }

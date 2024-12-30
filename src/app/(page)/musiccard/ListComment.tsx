@@ -12,7 +12,7 @@ import { AiFillLike } from "react-icons/ai";
 
 export default function ListComment() {
   const [show, setShow] = useState<boolean>(false);
-  const [showTb, setShowTb] = useState<boolean>(false);
+  const [showTb, setShowtb] = useState<boolean>(false);
   const [like, setLike] = useState<boolean>(true);
 
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -68,12 +68,12 @@ export default function ListComment() {
 
                         <span>Trả lời</span>
                         <span
-                          onMouseEnter={() => setShowTb(true)}
-                          onMouseLeave={() => setShowTb(false)}
+                          onMouseEnter={() => setShowtb(true)}
+                          onMouseLeave={() => setShowtb(false)}
                           className="flex items-center relative"
                         >
                           <IoEllipsisHorizontal
-                            onClick={() => setShowTb(true)}
+                            onClick={() => setShowtb(true)}
                             className="text-20 cursor-pointer"
                           />
                           {showTb && (

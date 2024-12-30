@@ -44,23 +44,26 @@ export default function Header() {
     "Haikyuu!!",
   ];
   useEffect(() => {
-    const handleScroll = () => {
-      // Check if the page has been scrolled down more than 50px
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+    // Kiểm tra nếu đang ở phía client
+    if (typeof window !== "undefined") {
+      const handleScroll = () => {
+        // Kiểm tra nếu trang đã được cuộn xuống hơn 50px
+        if (window.scrollY > 50) {
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
 
-    // Add scroll event listener
-    window.addEventListener("scroll", handleScroll);
+      // Thêm event listener cho scroll
+      window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      // Cleanup khi component unmount
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, []); // Mảng phụ thuộc rỗng để chỉ chạy một lần khi mount
 
   const isActiveLink = (href: string) => {
     return pathname === href;

@@ -7,22 +7,28 @@ export default function page() {
   const [number, setNumber] = useState(6); // Số lượng mặc định
 
   useEffect(() => {
-    const updateNumber = () => {
-      if (window.innerWidth >= 1024) {
-        setNumber(8); // Desktop
-      } else if (window.innerWidth >= 768) {
-        setNumber(4); // Tablet
-      } else {
-        setNumber(2); // Mobile
-      }
-    };
+    // Kiểm tra nếu đang ở phía client
+    if (typeof window !== "undefined") {
+      const updateNumber = () => {
+        if (window.innerWidth >= 1024) {
+          setNumber(8); // Desktop
+        } else if (window.innerWidth >= 768) {
+          setNumber(4); // Tablet
+        } else {
+          setNumber(2); // Mobile
+        }
+      };
 
-    // Gọi hàm khi tải trang và khi thay đổi kích thước
-    updateNumber();
-    window.addEventListener("resize", updateNumber);
+      // Gọi hàm khi tải trang và khi thay đổi kích thước
+      updateNumber();
+      window.addEventListener("resize", updateNumber);
 
-    return () => window.removeEventListener("resize", updateNumber);
-  }, []);
+      return () => {
+        window.removeEventListener("resize", updateNumber);
+      };
+    }
+  }, []); // Mảng phụ thuộc rỗng để chỉ chạy một lần khi mount
+
   return (
     <Layout1>
       <div className="lg:p-[100px] pt-[80px] px-[10px] min-h-screen lg:space-y-[35px] space-y-[20px]">

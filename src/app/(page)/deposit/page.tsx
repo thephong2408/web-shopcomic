@@ -4,10 +4,10 @@ import React from "react";
 import { useState } from "react";
 import Button from "@/app/components/Button";
 export default function page() {
-  const [selectedBank, setSelectedBank] = useState<string | null>("MoMo");
+  const [selectedBank, setSelectedbank] = useState<string | null>("MoMo");
 
   const handleSelectBank = (bankName: string) => {
-    setSelectedBank(bankName);
+    setSelectedbank(bankName);
   };
   const getClassName = (bankName: string) => {
     // Nếu ngân hàng đang được chọn, thêm class "selected"
