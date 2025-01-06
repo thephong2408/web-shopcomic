@@ -83,7 +83,7 @@ export default function Information() {
         {/* các nút */}
         <ul className="xl:flex xl:justify-between  border-b-[1px] pb-[15px]">
           <li className="text-36 font-bold xl:w-[60%]">
-            K-ICM ft. Văn Mai Hương, Lê Bống - Chim Quý Trong Lồng (Official MV)
+            K-ICM ft. Văn Mai Hương, Lê Bống - Chim Quý Trong Lồng - Official MV
           </li>
           <li className="xl:w-[40%]">
             <ul className="flex justify-between lg:justify-start lg:space-x-5 lg:mt-0 mt-5">
@@ -147,7 +147,7 @@ export default function Information() {
               </li>
               <li>
                 Thưởng thức tác phẩm của K-ICM ft. Văn Mai Hương, Lê Bống - Chim
-                Quý Trong Lồng (Official MV) ngay tại POPS. Tải ngay POPS APP -
+                Quý Trong Lồng Official MV ngay tại POPS. Tải ngay POPS APP -
                 ứng dụng giải trí hàng đầu với kho nội dung đa dạng phong phú,
                 và được cập nhật liên tục để có trải...
               </li>

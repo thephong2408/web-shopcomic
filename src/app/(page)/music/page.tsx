@@ -48,7 +48,7 @@ export default function Page() {
           number={number}
           text="Nhạc Cho Một Ngày Chill"
           shop={false}
-          textCard={"Uyên Linh - Khoảng Trống (Lyrics Video)"}
+          textCard={"Uyên Linh - Khoảng Trống - Lyrics Video"}
         />
         <Swiper2
           cardNumber={false}
@@ -56,7 +56,7 @@ export default function Page() {
           number={number}
           text="Nhạc Cho Một Ngày Chill"
           shop={false}
-          textCard={"Uyên Linh - Khoảng Trống (Lyrics Video)"}
+          textCard={"Uyên Linh - Khoảng Trống - Lyrics Video "}
         />
         <Postermucsic text="POPS đề cử" show={false} />
         <Swiper2
@@ -65,7 +65,7 @@ export default function Page() {
           number={number}
           text="Có Chút Ngọt Ngào 🍭"
           shop={false}
-          textCard={"Uyên Linh - Khoảng Trống (Lyrics Video)"}
+          textCard={"Uyên Linh - Khoảng Trống - Lyrics Video"}
         />
         <Swiper2
           cardNumber={false}
@@ -73,7 +73,7 @@ export default function Page() {
           number={number}
           text="Cà Phê Cùng Nhạc Việt"
           shop={false}
-          textCard={"Uyên Linh - Khoảng Trống (Lyrics Video)"}
+          textCard={"Uyên Linh - Khoảng Trống - Lyrics Video"}
         />
         <Swiper2
           cardNumber={false}
@@ -81,7 +81,7 @@ export default function Page() {
           number={number}
           text="Dương Triệu Vũ - Official MV"
           shop={false}
-          textCard={"Uyên Linh - Khoảng Trống (Lyrics Video)"}
+          textCard={"Uyên Linh - Khoảng Trống - Lyrics Video"}
         />
         <Swiper2
           cardNumber={false}
@@ -89,7 +89,7 @@ export default function Page() {
           number={number}
           text="Dương Triệu Vũ - Official MV"
           shop={false}
-          textCard={"Uyên Linh - Khoảng Trống (Lyrics Video)"}
+          textCard={"Uyên Linh - Khoảng Trống - Lyrics Video"}
         />
         <Swiper2
           cardNumber={false}
@@ -97,7 +97,7 @@ export default function Page() {
           number={number}
           text="Hồ Ngọc Hà - Music video"
           shop={false}
-          textCard={"Uyên Linh - Khoảng Trống (Lyrics Video)"}
+          textCard={"Uyên Linh - Khoảng Trống - Lyrics Video"}
         />
         <Swiper2
           cardNumber={false}
@@ -105,7 +105,7 @@ export default function Page() {
           number={number}
           text=" Trúc Nhân - Official MV"
           shop={false}
-          textCard={"Uyên Linh - Khoảng Trống (Lyrics Video)"}
+          textCard={"Uyên Linh - Khoảng Trống - Lyrics Video"}
         />
         <Postermucsic text="POPS đề cử" show={false} />
         <Swiper2
@@ -114,13 +114,13 @@ export default function Page() {
           number={number}
           text=" Uyên Linh - Lyrics video"
           shop={false}
-          textCard={"Uyên Linh - Khoảng Trống (Lyrics Video)"}
+          textCard={"Uyên Linh - Khoảng Trống - Lyrics Video"}
         />
         <ul className="flex flex-col space-y-5 pt-[50px] border-t-[1px] ">
           <li className="text-25 font-bold">Music</li>
           <li className="text-[#909092] text-18 font-medium">
-            Music Tổng hợp các MV & clip ca nhạc chọn lọc hay nhất: nhạc trẻ, ca
-            nhạc Việt Nam, nhạc xuân... mới và ăn khách nhất hiện nay.
+            Music Tổng hợp các MV và clip ca nhạc chọn lọc hay nhất: nhạc trẻ,
+            ca nhạc Việt Nam, nhạc xuân... mới và ăn khách nhất hiện nay.
           </li>
         </ul>
       </div>
