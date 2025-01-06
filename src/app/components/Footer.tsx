@@ -105,7 +105,7 @@ export default function Footer() {
             285 Cách Mạng Tháng Tám, Phường 12, Quận 10, Thành phố Hồ Chí Minh
           </span>
           <span className="text-14">
-            <strong>Điện thoại:</strong>: +84 (28) 62921652
+            <strong>Điện thoại:</strong>: +84 28 62921652
           </span>
           <span className="text-14 flex space-x-1">
             <strong>Email : </strong>{" "}
@@ -123,9 +123,7 @@ export default function Footer() {
           Giấy phép thiết lập mạng xã hội số 63/GP-BTTTT cấp bởi Bộ Thông tin &
           Truyền thông cấp ngày 22/02/2019
         </span>
-        <span>
-          © 2018 POPS Worldwide. Mọi bản quyền thuộc về POPS Worldwide.
-        </span>
+        <span>2018 POPS Worldwide. Mọi bản quyền thuộc về POPS Worldwide.</span>
       </div>
     </div>
   );
