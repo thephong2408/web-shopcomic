@@ -75,11 +75,12 @@ export default function Page() {
           </Alert>
         )}
 
-        <div className="lg:absolute w-full lg:h-[620px] h-auto top-0 left-0 z-0 ">
+        <div className="lg:absolute w-full lg:h-[620px] h-auto top-0 left-0 z-10 ">
+          <div className="w-full absolute top-0 left-0 h-full bg_img2 z-10"></div>
           <img
-            src="https://vnw-Image-cdn.popsww.com/api/v2/containers/file2/cms_thumbnails/1920x1080-0d9f3c4a9e5c-1724816733213-joAxVCt2.jpg?v=0&format=webp"
+            src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_thumbnails/1920x1080-0d9f3c4a9e5c-1724816733213-joAxVCt2.jpg?v=0&format=webp"
             alt=""
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover  z-0"
           />
         </div>
         <ul className="relative px-100 lg:py-[120px] pt-[10px] space-y-[20px] z-20">
