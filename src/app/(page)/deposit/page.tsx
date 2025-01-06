@@ -1,6 +1,6 @@
 "use client";
-import Layout1 from "@/app/layout/Layout1";
 import React from "react";
+import Layout1 from "@/app/layout/Layout1";
 import { useState } from "react";
 import Button from "@/app/components/Button";
 import Image from "next/image";
