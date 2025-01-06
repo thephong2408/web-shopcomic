@@ -12,6 +12,7 @@ import { FaCheck } from "react-icons/fa6";
 import ListComment from "./ListComment";
 import Layout1 from "@/app/layout/Layout1";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function Card() {
   const [text, setText] = useState<boolean>(true);

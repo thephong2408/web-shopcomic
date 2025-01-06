@@ -5,6 +5,7 @@ import Button from "./Button";
 import { IoIosAdd } from "react-icons/io";
 import { MdOutlineSlowMotionVideo } from "react-icons/md";
 import { useState } from "react";
+import Image from "next/image";
 interface PosterProps {
   text: string; // Nội dung của nút
   onClick?: () => void; // Hàm xử lý sự kiện khi bấm nút (tùy chọn)

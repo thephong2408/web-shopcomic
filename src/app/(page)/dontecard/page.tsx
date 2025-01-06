@@ -11,6 +11,7 @@ import Swiper2 from "@/app/components/Swiper1";
 import Link from "next/link";
 import Share from "@/app/components/Share";
 import Buy from "@/app/components/Buy";
+import Image from "next/image";
 
 export default function page() {
   const [open, setOpen] = useState<boolean>(false);
@@ -202,7 +203,7 @@ export default function page() {
             number={number}
             shop={false}
             textCard="Gói Ủng Hộ Phát Triển Nền Tảng"
-            img="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_thumbnails/tr_a_hori-fd296efd0c1f-1682411563647-NyAAtfxa.jpg?v=0&maxW=320&format=webp"
+            img="https://vnw-Image-cdn.popsww.com/api/v2/containers/file2/cms_thumbnails/tr_a_hori-fd296efd0c1f-1682411563647-NyAAtfxa.jpg?v=0&maxW=320&format=webp"
           />
         </ul>
         {/* băng chuyền */}
@@ -210,12 +211,12 @@ export default function page() {
         {/* nền page */}
         <div className="absolute w-full lg:h-[620px] h-full top-0 left-0 z-0 ">
           <img
-            src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_thumbnails/bu_i_t_i_banner-411b7245631b-1682412694150-0BW4Vv3g.jpg?v=0&format=webp"
+            src="https://vnw-Image-cdn.popsww.com/api/v2/containers/file2/cms_thumbnails/bu_i_t_i_banner-411b7245631b-1682412694150-0BW4Vv3g.jpg?v=0&format=webp"
             alt=""
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="absolute top-0 left-0 w-full h-full bg_img2 z-10"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg_Image2 z-10"></div>
       </div>
     </Layout1>
   );

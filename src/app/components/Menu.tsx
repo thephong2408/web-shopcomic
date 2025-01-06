@@ -20,6 +20,9 @@ export default function Menu() {
             <Link href={"/comics"}>Comics</Link>
           </span>
           <span className="font-semibold">
+            <Link href={"/filteredStories"}>Lọc truyện</Link>
+          </span>
+          <span className="font-semibold">
             <Link href={"/"}>Shop</Link>
           </span>
           <span className="font-semibold">

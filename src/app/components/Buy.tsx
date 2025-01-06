@@ -1,8 +1,11 @@
+"use client";
+import React from "react";
 import Link from "next/link";
 import Button from "./Button";
 import Alert from "./Alert";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
+import Image from "next/image";
 
 export default function Buy() {
   const [open1, setOpen1] = useState<boolean>(false);

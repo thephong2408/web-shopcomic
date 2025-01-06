@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Button from "@/app/components/Button";
 import Swiper2 from "@/app/components/Swiper1";
+import Image from "next/image";
 
 export default function Bangchuyen() {
   const arr = [1, 2, 3, 1, 2];

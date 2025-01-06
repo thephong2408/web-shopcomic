@@ -8,6 +8,7 @@ import { HiMiniRectangleStack } from "react-icons/hi2";
 import { HiChevronLeft } from "react-icons/hi2";
 import Comment from "./Comment";
 import { IoClose } from "react-icons/io5";
+import Image from "next/image";
 
 import Link from "next/link";
 

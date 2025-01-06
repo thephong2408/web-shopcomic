@@ -3,14 +3,27 @@ import React, { useState } from "react";
 import Layout1 from "@/app/layout/Layout1";
 import Comics from "./Comics";
 import Video from "./Video";
+import AlertZero from "@/app/components/AlertZero";
 
 export default function Page() {
   const [activeTab, setActiveTab] = useState<string>("tat-ca"); // Sử dụng state để lưu tên tab đang chọn
   const [user, setUser] = useState<boolean>(false);
+  const [data, setData] = useState<any>([
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 7, 8, 7, 5,
+  ]);
+  if (data.length === 0) {
+    return (
+      <Layout1>
+        <div>
+          <AlertZero message="Chưa có truyện nào là lưu" />
+        </div>
+      </Layout1>
+    );
+  }
 
   return (
     <Layout1>
-      <div className="min-h-screen mt-[100px] xl:px-[100px] px-[10px]">
+      <div className="lg:min-h-screen h-auto mt-[100px] xl:px-[100px] px-[10px]">
         <span className="flex text-20 cursor-pointer">
           <span
             onClick={() => setActiveTab("tat-ca")}

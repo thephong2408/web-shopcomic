@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import { CgAddR } from "react-icons/cg";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function CardMusic() {
   const [show, setShow] = useState(false);

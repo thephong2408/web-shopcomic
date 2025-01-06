@@ -10,6 +10,7 @@ import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import Link from "next/link";
 import Buy from "@/app/components/Buy";
+import Image from "next/image";
 
 export default function page() {
   const [open, setOpen] = useState<boolean>(false);
@@ -76,7 +77,7 @@ export default function page() {
 
         <div className="lg:absolute w-full lg:h-[620px] h-auto top-0 left-0 z-0 ">
           <img
-            src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_thumbnails/1920x1080-0d9f3c4a9e5c-1724816733213-joAxVCt2.jpg?v=0&format=webp"
+            src="https://vnw-Image-cdn.popsww.com/api/v2/containers/file2/cms_thumbnails/1920x1080-0d9f3c4a9e5c-1724816733213-joAxVCt2.jpg?v=0&format=webp"
             alt=""
             className="w-full h-full object-cover"
           />
@@ -105,7 +106,7 @@ export default function page() {
           </li>
         </ul>
 
-        <div className="absolute top-0 left-0 w-full h-full bg_img2 z-10"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg_Image2 z-10"></div>
       </div>
     </Layout1>
   );

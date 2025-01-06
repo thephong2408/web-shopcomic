@@ -5,6 +5,7 @@ import { useState } from "react";
 import { AiFillCaretDown } from "react-icons/ai";
 import { IoIosLock } from "react-icons/io";
 import { CgAddR } from "react-icons/cg";
+import Image from "next/image";
 
 export default function ListChap() {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];

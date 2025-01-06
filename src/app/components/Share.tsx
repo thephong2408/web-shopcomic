@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 import { IoClose, IoShareSocial } from "react-icons/io5";
 import Alert from "./Alert";
+import Image from "next/image";
 
 export default function Share() {
   const [open, setOpen] = useState<boolean>(false);

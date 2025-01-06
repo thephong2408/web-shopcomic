@@ -18,6 +18,7 @@ import FeedbackForm from "./Comment";
 import User from "./User";
 import { PiHandDepositFill } from "react-icons/pi";
 import { AiOutlineLogout } from "react-icons/ai";
+import Image from "next/image";
 
 export default function Setting() {
   const pathname = usePathname();
@@ -44,6 +45,7 @@ export default function Setting() {
               >
                 <div className="h-[55px] w-[75px] ">
                   <img
+                 
                     src="https://cdn.popsww.com/popsapp/assets/images/account/gift.png"
                     alt=""
                   />

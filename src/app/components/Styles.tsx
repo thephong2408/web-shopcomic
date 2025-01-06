@@ -1,3 +1,5 @@
+"use client";
+import React from "react";
 import { global } from "styled-jsx/css";
 export default function Styles({
   children,

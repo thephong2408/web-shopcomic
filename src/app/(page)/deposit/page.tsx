@@ -3,6 +3,7 @@ import Layout1 from "@/app/layout/Layout1";
 import React from "react";
 import { useState } from "react";
 import Button from "@/app/components/Button";
+import Image from "next/image";
 export default function page() {
   const [selectedBank, setSelectedbank] = useState<string | null>("MoMo");
 

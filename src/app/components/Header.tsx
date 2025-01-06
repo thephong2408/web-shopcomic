@@ -15,6 +15,7 @@ import { PiHandDepositFill } from "react-icons/pi";
 import { AiOutlineLogout } from "react-icons/ai";
 import { HiMenuAlt3 } from "react-icons/hi";
 import Menu from "./Menu";
+import Image from "next/image";
 
 export default function Header() {
   const pathname = usePathname();
@@ -70,7 +71,7 @@ export default function Header() {
   };
   return (
     <div
-      className={` z-50 w-full  text-20 font-[400] lg:py-[30px] py-[15px] text-white lg:px-[100px] px-[20px] fixed top-0 left-0 transition-all duration-300 ${
+      className={` z-50 w-full  text-20 font-[400] lg:py-[20px] py-[15px] text-white lg:px-[100px] px-[20px] fixed top-0 left-0 transition-all duration-300 ${
         isScrolled ? "bg-header" : "bg-transparent"
       }`}
     >
@@ -100,6 +101,17 @@ export default function Header() {
               } `}
             >
               Comics
+            </li>
+          </Link>
+          <Link href={"/filteredStories"}>
+            <li
+              className={`h-full items-center hidden lg:flex  ${
+                isActiveLink("/filteredStories")
+                  ? "text-[#d16428] font-bold"
+                  : ""
+              } `}
+            >
+              Lọc truyện
             </li>
           </Link>
           <li className="h-full items-center hidden lg:flex  ">Shop</li>
@@ -220,6 +232,7 @@ export default function Header() {
                     >
                       <div className="h-[55px] w-[75px] ">
                         <img
+                      
                           src="https://cdn.popsww.com/popsapp/assets/images/account/gift.png"
                           alt=""
                         />

@@ -11,6 +11,7 @@ import { IoClose } from "react-icons/io5";
 import { FaCheck } from "react-icons/fa";
 
 import Alert from "@/app/components/Alert";
+import Image from "next/image";
 
 export default function Information() {
   const [save, setSave] = useState<boolean>(true);

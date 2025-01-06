@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
-import Zero from "./Zero";
+import AlertZero from "@/app/components/AlertZero";
 import { useState } from "react";
 import Card1 from "@/app/components/Card1";
+import Pagination from "@/app/components/Pagination";
 
 export default function Video() {
   const [data, setData] = useState<any>([
@@ -11,20 +12,23 @@ export default function Video() {
   if (data.length === 0) {
     return (
       <div>
-        <Zero message="Chọn video nào là lưu" />
+        <AlertZero message="Chọn video nào là lưu" />
       </div>
     );
   }
   return (
-    <div className=" grid lg:grid-cols-4 grid-cols-2 lg:gap-10 gap-2 lg:py-[30px] py-[10px]">
-      {data.map((item: any, index: number) => (
-        <Card1
-          key={index}
-          shop={false}
-          textCard="K-ICM ft. Văn Mai Hương, Lê Bống"
-          height={150}
-        />
-      ))}
+    <div>
+      <div className=" grid lg:grid-cols-4 grid-cols-2 lg:gap-10 gap-2 lg:py-[30px] py-[10px]">
+        {data.map((item: any, index: number) => (
+          <Card1
+            key={index}
+            shop={false}
+            textCard="K-ICM ft. Văn Mai Hương, Lê Bống"
+            height={150}
+          />
+        ))}
+      </div>
+      <Pagination />
     </div>
   );
 }

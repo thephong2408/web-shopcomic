@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import Layout1 from "@/app/layout/Layout1";
 import PackageTable from "./Table";
+import Image from "next/image";
 
 export default function Data3g() {
   return (

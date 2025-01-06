@@ -3,6 +3,7 @@ import React from "react";
 import { FaHandPointRight } from "react-icons/fa";
 import Button from "./Button";
 import { IoIosAdd } from "react-icons/io";
+import Image from "next/image";
 interface PosterProps {
   text: string; // Nội dung của nút
   onClick?: () => void; // Hàm xử lý sự kiện khi bấm nút (tùy chọn)
@@ -37,6 +38,7 @@ export default function Poster({
           <div className="lg:w-[50%] w-full ">
             <div className="lg:h-[385px] h-auto rounded-md overflow-hidden shadow-lg">
               <img
+                className="w-full h-full object-cover"
                 src="https://pops-images-vn.akamaized.net/api/v2/containers/file2/cms_assets/thumb_ngang_1920x1080_notext-75ac83d4baa5-1710817279196-thWolNWJ.jpg?v=0&maxW=1400&format=webp"
                 alt=""
               />

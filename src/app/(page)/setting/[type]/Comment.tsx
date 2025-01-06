@@ -1,5 +1,7 @@
 // components/FeedbackForm.tsx
-
+"use client";
+import React from "react";
+import Image from "next/image";
 import { useState } from "react";
 import { HiMiniInboxArrowDown } from "react-icons/hi2";
 
@@ -31,13 +33,15 @@ const FeedbackForm: React.FC = () => {
       HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
     >
   ) => {
-    const { name, value, type, files } = event.target as HTMLInputElement &
-      HTMLSelectElement &
-      HTMLTextAreaElement;
+    const target = event.target as
+      | HTMLInputElement
+      | HTMLSelectElement
+      | HTMLTextAreaElement;
+    const { name, value, type } = target;
 
-    if (type === "file" && files) {
+    if (type === "file" && target instanceof HTMLInputElement && target.files) {
       // Giới hạn số lượng file tải lên là 3
-      const newFiles = Array.from(files).slice(0, 3);
+      const newFiles = Array.from(target.files).slice(0, 3);
       const newFileURLs = newFiles.map((file) => URL.createObjectURL(file));
 
       setPreviewImages((prevImages) => [
@@ -47,7 +51,7 @@ const FeedbackForm: React.FC = () => {
 
       setFormValues((prevValues) => ({
         ...prevValues,
-        [name]: files,
+        [name]: target.files,
       }));
       console.log(newFileURLs);
     } else {

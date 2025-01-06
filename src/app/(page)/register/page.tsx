@@ -3,6 +3,7 @@ import React from "react";
 import { FaEye } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Register() {
   return (

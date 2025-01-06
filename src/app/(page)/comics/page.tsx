@@ -288,7 +288,7 @@ export default function Comics() {
             text={"FanFan Webtoons"}
             className=" px-100"
           />
-          <ul className="mx-[100px] py-[20px] space-y-5 text-white border-t-[1px] border-[#ccc]">
+          <ul className="lg:mx-[100px] mx-[10px] py-[20px] space-y-5 text-white border-t-[1px] border-[#ccc]">
             <li className="text-25 font-bold">Comic</li>
             <li className="text-18 text-[#ccc]">
               Đọc truyện tranh hay nhất, đa dạng thể loại: truyện tranh ngôn
