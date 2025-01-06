@@ -34,9 +34,7 @@ export default function Swiper1() {
               {/* <div className="w-[8px] h-[40px] rounded-full bg__title"></div> */}
               <span className="relative ">
                 <FaHandPointRight className="text-50 text-[#f47213]" />
-                <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-18 font-bold text-white">
-                  %
-                </span>
+                <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-18 font-bold text-white"></span>
               </span>
               <span className="text-36 font-bold text-white">{item}</span>
             </span>

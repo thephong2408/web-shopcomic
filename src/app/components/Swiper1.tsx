@@ -49,9 +49,7 @@ export default function Swiper2({
             {React.cloneElement(icon as React.ReactElement, {
               className: iconClassName,
             })}
-            <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-18 font-bold text-white">
-              %
-            </span>
+            <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-18 font-bold text-white"></span>
           </span>
           <span className="text-36 font-bold text-white">{text}</span>
         </span>
