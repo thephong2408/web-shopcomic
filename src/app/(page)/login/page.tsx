@@ -57,7 +57,7 @@ export default function Register() {
           </button>
         </form>
         <span className="text-center flex flex-col text-[#6c6c6c] text-16 px-[10px]">
-          <span>Bằng cách chọn "Đăng nhập tài khoản"</span>
+          <span>Bằng cách chọn -Đăng nhập tài khoản</span>
           <span>
             bạn đồng ý với <u className="text-[#cc662f]">Điều khoản sử dụng</u>{" "}
             và <u className="text-[#cc662f]">Chính sách riêng tư</u> của POPS
