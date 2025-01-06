@@ -4,7 +4,7 @@ import Layout1 from "@/app/layout/Layout1";
 import { useState } from "react";
 import Button from "@/app/components/Button";
 import Image from "next/image";
-export default function page() {
+export default function Page() {
   const [selectedBank, setSelectedbank] = useState<string | null>("MoMo");
 
   const handleSelectBank = (bankName: string) => {

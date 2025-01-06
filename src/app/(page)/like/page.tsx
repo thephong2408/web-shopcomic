@@ -5,7 +5,7 @@ import { useState } from "react";
 import Comics from "./Comics";
 import Video from "./Video";
 
-export default function page() {
+export default function Page() {
   const [show, setShow] = useState<boolean>(true);
   const [user, setUser] = useState<boolean>(false);
 

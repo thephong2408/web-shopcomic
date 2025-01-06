@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Layout1 from "@/app/layout/Layout1";
 import Swiper2 from "@/app/components/Swiper1";
 import Postermucsic from "@/app/components/Postermucsic";
-export default function page() {
+export default function Page() {
   const [number, setNumber] = useState(6); // Số lượng mặc định
 
   useEffect(() => {

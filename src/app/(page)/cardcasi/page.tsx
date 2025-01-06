@@ -10,7 +10,7 @@ import { IoClose } from "react-icons/io5";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function page() {
+export default function Page() {
   const [open, setOpen] = useState<boolean>(false);
   const [open1, setOpen1] = useState<boolean>(false);
 
