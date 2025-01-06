@@ -45,7 +45,7 @@ export default function Comics() {
           </div>
           <Swiper2
             number={number}
-            text={"Top 10 Unlock All-Time 🏆"}
+            text={"Top 10 Unlock All-Time "}
             className=" px-100"
           />
           <Swiper2
@@ -64,13 +64,13 @@ export default function Comics() {
           <Swiper2
             number={number}
             shop={false}
-            text={"Top 10 Unlock Tuần 🚀"}
+            text={"Top 10 Unlock Tuần "}
             className=" px-100"
           />
           <Swiper2
             number={number}
             shop={false}
-            text={"Top 10 Unlock Tháng 🚀"}
+            text={"Top 10 Unlock Tháng "}
             className=" px-100"
           />
 
@@ -78,7 +78,7 @@ export default function Comics() {
           <Swiper2
             number={number}
             shop={false}
-            text={"🎯TOP 15 POPS Comic Bất Hủ🎯"}
+            text={"TOP 15 POPS Comic Bất Hủ"}
             className=" px-100"
           />
           <Swiper2
@@ -91,7 +91,7 @@ export default function Comics() {
           <Swiper2
             number={number}
             shop={false}
-            text={"👨‍❤️‍💋‍👨Động Cuồng BL - GL👩‍❤️‍💋‍👩"}
+            text={"Động Cuồng BL - GL"}
             className=" px-100"
           />
           <Swiper2
@@ -103,7 +103,7 @@ export default function Comics() {
           <Swiper2
             number={number}
             shop={false}
-            text={"Có Con Quỷ Sau Lưng Bạn Kìa 👻"}
+            text={"Có Con Quỷ Sau Lưng Bạn Kìa "}
             className=" px-100"
           />
           <div className="w-full px-100">
@@ -115,7 +115,7 @@ export default function Comics() {
           <Swiper2
             number={number}
             shop={false}
-            text={"Top 10 Unlock Tháng 💎"}
+            text={"Top 10 Unlock Tháng "}
             className=" px-100"
           />
           <Swiper2
@@ -124,17 +124,17 @@ export default function Comics() {
             text={"Đọc Trọn Bộ, Chờ Chi?"}
             className=" px-100"
           />
-          <Poster text={"🎉ƯU ĐÃI CỰC CHÁY💫"} className=" px-100" />
+          <Poster text={"ƯU ĐÃI CỰC CHÁY"} className=" px-100" />
           <Swiper2
             number={number}
             shop={false}
-            text={"💫Top Truyện Cười Rụng Rốn🤣"}
+            text={"Top Truyện Cười Rụng Rốn"}
             className=" px-100"
           />
           <Swiper2
             number={number}
             shop={false}
-            text={"🌪Truyện Ngược Nữa, Ngược Mãi🌊"}
+            text={"Truyện Ngược Nữa, Ngược Mãi"}
             className=" px-100"
           />
           <Swiper2
@@ -153,7 +153,7 @@ export default function Comics() {
           <Swiper2
             number={number}
             shop={false}
-            text={"POPS Bonus Program ️🏆"}
+            text={"POPS Bonus Program ️"}
             className=" px-100"
           />
           <div className="w-full px-100">
