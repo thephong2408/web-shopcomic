@@ -306,48 +306,48 @@ export default function Header() {
                     </div>
 
                     {/* khi đã đăng nhập mới có  */}
-                    <ul className="mt-0 py-[5px] px-[20px] text-[#eaeaea] font-bold ">
+                    <ul className="mt-0 py-[5px]  text-[#eaeaea] font-bold ">
                       {/* khi đã đăng nhập mới có  */}
                       <Link href={"/"}>
-                        <li className="py-[15px] space-x-2 flex items-center">
-                          <MdHistory className="text-25 text-white font-bold" />
+                        <li className="py-[15px] space-x-2 flex items-center px-[20px] hover:text-[#ff7536] hover:font-bold hover:bg-[#3f3f3f]">
+                          <MdHistory className="text-25 font-bold" />
                           <span className="text-14">Lịch sử giao dịch</span>
                         </li>
                       </Link>
                       {/* khi đã đăng nhập mới có  */}
                       <Link href={"/data3g4g"}>
-                        <li className="py-[15px] space-x-2 flex items-center">
-                          <MdOutline4gPlusMobiledata className="text-25 text-white font-bold" />
+                        <li className="py-[15px] space-x-2 flex items-center px-[20px] hover:text-[#ff7536] hover:font-bold hover:bg-[#3f3f3f]">
+                          <MdOutline4gPlusMobiledata className="text-25 font-bold" />
                           <span className="text-14">Miễn phí data</span>
                         </li>
                       </Link>
                       <Link href={"/like"}>
-                        <li className="py-[15px] space-x-2 flex items-center border-b-[1px] border-[#eaeaea]">
-                          <IoCheckbox className="text-20 text-white font-bold" />
+                        <li className="py-[15px] space-x-2 flex items-center px-[20px] hover:text-[#ff7536] hover:font-bold hover:bg-[#3f3f3f] border-b-[1px] border-[#eaeaea]">
+                          <IoCheckbox className="text-20 font-bold" />
                           <span className="text-14">Yêu thích</span>
                         </li>
                       </Link>
                       <Link href={"/setting/setting"}>
-                        <li className="py-[15px] space-x-2 flex items-center">
-                          <MdSettingsApplications className="text-20 text-white font-bold" />
+                        <li className="py-[15px] space-x-2 flex items-center px-[20px] hover:text-[#ff7536] hover:font-bold hover:bg-[#3f3f3f]">
+                          <MdSettingsApplications className="text-20 font-bold" />
                           <span className="text-14">Cài đặt chung</span>
                         </li>
                       </Link>
 
                       <Link href={"/setting/feedbackform"}>
-                        <li className="py-[15px] space-x-2 flex items-center">
-                          <RiFeedbackFill className="text-20 text-white font-bold" />
+                        <li className="py-[15px] space-x-2 flex items-center px-[20px] hover:text-[#ff7536] hover:font-bold hover:bg-[#3f3f3f]">
+                          <RiFeedbackFill className="text-20 font-bold" />
                           <span className="text-14">Phản hồi và ứng dụng</span>
                         </li>
                       </Link>
                       <Link href={"/setting/cty"}>
-                        <li className="py-[15px] space-x-2 flex items-center">
-                          <FaHospitalUser className="text-20 text-white font-bold" />
+                        <li className="py-[15px] space-x-2 flex items-center px-[20px] hover:text-[#ff7536] hover:font-bold hover:bg-[#3f3f3f]">
+                          <FaHospitalUser className="text-20 font-bold" />
                           <span className="text-14">Về chúng tôi</span>
                         </li>
                       </Link>
-                      <li className="py-[15px] space-x-2 flex items-center">
-                        <AiOutlineLogout className="text-20 text-white font-bold" />
+                      <li className="py-[15px] space-x-2 flex items-center px-[20px] hover:text-[#ff7536] hover:font-bold hover:bg-[#3f3f3f]">
+                        <AiOutlineLogout className="text-20 font-bold" />
                         <span className="text-14">Đăng xuất</span>
                       </li>
                     </ul>

@@ -119,38 +119,38 @@ export default function Setting() {
                 </ul>
               </div>
               {/* khi đã đăng nhập */}
-              <ul className="mt-5 py-[10px] px-[20px] text-[#eaeaea] font-bold ">
+              <ul className="mt-5 py-[10px] text-[#eaeaea] font-bold ">
                 <Link href={"/data3g4g"}>
-                  <li className="py-[15px] space-x-2 flex items-center">
+                  <li className="py-[15px] space-x-2 flex items-center px-[20px] hover:text-[#ff7536] hover:font-bold hover:bg-[#3f3f3f]">
                     <MdOutline4gPlusMobiledata className="text-25  font-bold" />
                     <span className="text-14">Miễn phí data</span>
                   </li>
                 </Link>
                 <Link href={"/like"}>
-                  <li className="py-[15px] space-x-2 flex items-center border-b-[1px] border-[#eaeaea]">
+                  <li className="py-[15px] space-x-2 flex items-center px-[20px] hover:text-[#ff7536] hover:font-bold hover:bg-[#3f3f3f] border-b-[1px] border-[#eaeaea]">
                     <IoCheckbox className="text-20  font-bold" />
                     <span className="text-14">Yêu thích</span>
                   </li>
                 </Link>
                 <Link href={"/setting/setting"}>
-                  <li className="py-[15px] space-x-2 flex items-center">
+                  <li className="py-[15px] space-x-2 flex items-center px-[20px] hover:text-[#ff7536] hover:font-bold hover:bg-[#3f3f3f]">
                     <MdSettingsApplications className="text-20  font-bold" />
                     <span className="text-14">Cài đặt chung</span>
                   </li>
                 </Link>
                 <Link href={"/setting/feedbackform"}>
-                  <li className="py-[15px] space-x-2 flex items-center">
+                  <li className="py-[15px] space-x-2 flex items-center px-[20px] hover:text-[#ff7536] hover:font-bold hover:bg-[#3f3f3f]">
                     <RiFeedbackFill className="text-20  font-bold" />
                     <span className="text-14">Phản hồi và ứng dụng</span>
                   </li>
                 </Link>
                 <Link href={"/setting/cty"}>
-                  <li className="py-[15px] space-x-2 flex items-center">
+                  <li className="py-[15px] space-x-2 flex items-center px-[20px] hover:text-[#ff7536] hover:font-bold hover:bg-[#3f3f3f]">
                     <FaHospitalUser className="text-20  font-bold" />
                     <span className="text-14">Về chúng tôi</span>
                   </li>
                 </Link>
-                <li className="py-[15px] space-x-2 flex items-center border-t-[1px] border-[#eaeaea]">
+                <li className="py-[15px] space-x-2 flex items-center px-[20px] hover:text-[#ff7536] hover:font-bold hover:bg-[#3f3f3f] border-t-[1px] border-[#eaeaea]">
                   <AiOutlineLogout className="text-20 font-bold" />
                   <span className="text-14">Đăng xuất</span>
                 </li>
