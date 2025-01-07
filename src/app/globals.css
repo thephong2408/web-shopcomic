@@ -340,6 +340,18 @@ input[type="checkbox"]:checked::after {
   padding-left: 100px;
   padding-right: 100px;
 }
+@media (max-width: 1400px) {
+  .px-100 {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+@media (max-width: 1000px) {
+  .px-100 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 @media (max-width: 768px) {
   /* Chữ từ 20px trở xuống giảm xuống 14px */
   .text-22,

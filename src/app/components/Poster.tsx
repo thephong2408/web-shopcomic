@@ -21,7 +21,7 @@ export default function Poster({
   show = true,
 }: PosterProps) {
   return (
-    <div className="w-full h-[630px] bg-[url('https://pops-images-vn.akamaized.net/api/v2/containers/file2/cms_assets/thumb_ngang_1920x1080_notext-75ac83d4baa5-1710817279196-thWolNWJ.jpg?v=0&maxW=1400&format=webp')] bg-cover bg-center bg-no-repeat">
+    <div className="w-full lg:h-[630px] h-auto bg-[url('https://pops-images-vn.akamaized.net/api/v2/containers/file2/cms_assets/thumb_ngang_1920x1080_notext-75ac83d4baa5-1710817279196-thWolNWJ.jpg?v=0&maxW=1400&format=webp')] bg-cover bg-center bg-no-repeat">
       <div className="w-full h-full bg_img1 lg:py-[35px] py-[10px] px-100 flex flex-col ">
         {/* img */}
         <span className="flex items-center space-x-[5px] mb-5">

@@ -71,7 +71,7 @@ export default function Header() {
   };
   return (
     <div
-      className={` z-50 w-full  text-20 font-[400] lg:py-[20px] py-[15px] text-white lg:px-[100px] px-[20px] fixed top-0 left-0 transition-all duration-300 ${
+      className={` z-50 w-full  text-20 font-[400] lg:py-[20px] py-[15px] text-white lg:px-[100px] md:px-[40px]  px-[10px] fixed top-0 left-0 transition-all duration-300 ${
         isScrolled ? "bg-header" : "bg-transparent"
       }`}
     >
@@ -114,7 +114,7 @@ export default function Header() {
               Lọc truyện
             </li>
           </Link>
-          <li className="h-full items-center hidden lg:flex  ">Shop</li>
+          {/* <li className="h-full items-center hidden lg:flex  ">Shop</li> */}
           <Link href={"/music"}>
             <li
               className={`h-full items-center hidden lg:flex  ${

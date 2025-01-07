@@ -35,7 +35,7 @@ export default function Product() {
     <Layout1>
       <div className="lg:my-[100px] my-[50px] px-100">
         {" "}
-        <div className="px-5 space-y-5">
+        <div className=" space-y-5">
           <div className="space-y-6">
             {/* Dropdown Quốc gia */}
             <div className="relative space-y-[5px] w-full">

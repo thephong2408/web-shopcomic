@@ -29,7 +29,7 @@ export default function Menu() {
             <Link href={"/music"}>Music</Link>
           </span>
           <span className="font-semibold">
-            <Link href={"donate"}>Donate</Link>
+            <Link href={"/donate"}>Donate</Link>
           </span>
           <button
             onClick={() => setIsOpen(!isOpen)}

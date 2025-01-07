@@ -31,7 +31,7 @@ export default function Page() {
 
   return (
     <Layout1>
-      <div className="min-h-screen py-[100px] px-100 space-y-[25px]">
+      <div className="min-h-screen lg:py-[100px] py-[60px] px-100 lg:space-y-[25px] space-y-[10px]">
         <Swiper2
           text="Donate tiếp sức cho Admin cày deadline"
           img="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_thumbnails/1-9f2dfa3b76c8-1682410628496-4QQQupnb.jpg?v=0&maxW=260&format=webp"

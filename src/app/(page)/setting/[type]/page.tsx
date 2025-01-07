@@ -30,7 +30,7 @@ export default function Setting() {
   console.log(lastPart);
   return (
     <Layout1>
-      <div className="lg:py-[100px] mt-[60px] lg:px-[100px] px-0  flex justify-center items-center bg-[#141414]">
+      <div className="lg:py-[25px] mt-[60px] lg:px-[100px] px-0  flex justify-center items-center bg-[#141414]">
         <div className="min-h-[620px] flex flex-col lg:justify-center  lg:flex-row w-full bg-[#292929] lg:rounded-lg overflow-hidden">
           {/* cài đặt */}
           <div className=" lg:w-[410px] w-full flex-2 lg:border-r-[1px]">
