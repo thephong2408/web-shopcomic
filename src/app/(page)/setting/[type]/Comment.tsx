@@ -25,6 +25,11 @@ const FeedbackForm: React.FC = () => {
     comment: "",
     file: undefined,
   });
+  const [selectedCountry, setSelectedCountry] = useState<string>(
+    "Vui lòng chọn mục phản hồi"
+  );
+  const [isCountryOpen, setIsCountryOpen] = useState<boolean>(false);
+  const countries = ["Báo cáo lỗi", "Góp ý", "Câu hỏi"];
 
   const [previewImages, setPreviewImages] = useState<string[]>([]);
 
@@ -89,21 +94,32 @@ const FeedbackForm: React.FC = () => {
             />
           </div>
         </div>
-        <div className="form-group flex flex-col">
+        <div className="flex flex-col relative">
           <label className="text-18 font-medium mb-2" htmlFor="feedbackType">
             Chọn mục phản hồi:
           </label>
-          <select
-            id="feedbackType"
-            name="feedbackType"
-            value={formValues.feedbackType}
-            onChange={handleChange}
-            className="w-full text-16 rounded-md h-[45px] bg-[#343434] lg:px-[50px] px-[10px] flex items-center text-white"
+          <div
+            onClick={() => setIsCountryOpen(!isCountryOpen)}
+            className="w-full flex justify-start lg:p-[12px] p-[8px] text-16 bg-[#343434] text-white rounded shadow focus:outline-none focus:ring-2 focus:ring-orange-500 cursor-pointer"
           >
-            <option value="suggestion">Vui lòng chọn mục phản hồi</option>
-            <option value="complaint">Khiếu nại</option>
-            <option value="question">Câu hỏi</option>
-          </select>
+            <span>{selectedCountry}</span>
+          </div>
+          {isCountryOpen && (
+            <ul className="mt-3 z-10 w-full bg-[#343434] rounded shadow overflow-hidden">
+              {countries.map((country, index) => (
+                <li
+                  key={index}
+                  onClick={() => {
+                    setSelectedCountry(country);
+                    setIsCountryOpen(false);
+                  }}
+                  className="lg:p-[12px] p-[8px] text-16 text-white hover:bg-orange-500 cursor-pointer"
+                >
+                  {country}
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
         <div className="form-group flex flex-col">
           <label className="text-18 font-medium mb-2" htmlFor="name">
